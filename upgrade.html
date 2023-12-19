@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>SVOYDOM</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/nouislider.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <header class="header fixed-header fix">
+        <div class="wrapper">
+          <div class="header-info">
+            <a href="index.html" class="logo"
+              ><img src="img/logo.svg" alt=""
+            /></a>
+            <div class="menu-wrap">
+              <ul class="main-menu">
+                <li>
+                  <button type="button">Проекты <span>Меню</span></button>
+                  <ul class="sub-menu">
+                    <li><a href="current-projects.html">Текущие проекты</a></li>
+                    <li><a href="completed-projects.html">Завершенные</a></li>
+                  </ul>
+                </li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="upgrade.html">Svoy Upgrade</a></li>
+                <li><a href="upgrade.html">Svoy Bonus</a></li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="green-btn">Заказать звонок</a>
+                <div class="select-wrap lang">
+                  <select>
+                    <option value="1">Ру</option>
+                    <option value="2">Кз</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="header-buttons">
+              <div class="select-wrap icon-select">
+                <select>
+                  <option value="1">Алматы</option>
+                  <option value="2">Астана</option>
+                  <option value="3">Атырау</option>
+                </select>
+              </div>
+              <button class="drop-menu">
+                <img src="img/drop-icon.svg" alt="" />
+              </button>
+              <a href="favorites.html" class="favorite-icon">
+                <svg
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.4134 3.0747C17.3781 1.95181 15.9575 1.33337 14.413 1.33337C13.2585 1.33337 12.2013 1.69837 11.2704 2.41814C10.8008 2.78142 10.3752 3.22595 10 3.7447C9.62492 3.22607 9.19922 2.78142 8.72941 2.41814C7.79875 1.69837 6.74148 1.33337 5.58699 1.33337C4.0425 1.33337 2.62176 1.95181 1.58645 3.0747C0.563516 4.18447 0 5.7006 0 7.34396C0 9.03537 0.630351 10.5837 1.98363 12.2167C3.19426 13.6774 4.93422 15.1603 6.94914 16.8774C7.63719 17.4638 8.41707 18.1284 9.22684 18.8364C9.4408 19.0238 9.71557 19.1271 10 19.127C10.2846 19.127 10.5592 19.0238 10.7729 18.8367C11.5826 18.1286 12.363 17.4636 13.0513 16.8769C15.0659 15.1601 16.8059 13.6774 18.0165 12.2165C19.3698 10.5838 20 9.0354 20 7.3438C20 5.7006 19.4365 4.18447 18.4134 3.0747Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="breadcrumbs-wrap">
+          <div class="wrapper">
+            <ul class="breadcrumbs-menu">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="about.html">О компании</a></li>
+              <li><span>SvoyUpgrade</span></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="gsap-wrapper">
+        <div class="text-animate">
+          <svg
+            width="1440"
+            height="138"
+            viewBox="0 0 1440 138"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M76.7591 40.4494C76.2374 35.161 73.9983 31.0527 70.0419 28.1245C66.0855 25.1962 60.716 23.7321 53.9336 23.7321C49.325 23.7321 45.4338 24.3876 42.2599 25.6988C39.0861 26.9663 36.6513 28.7363 34.9557 31.009C33.3036 33.2817 32.4775 35.8603 32.4775 38.7449C32.3906 41.1487 32.8906 43.2466 33.9775 45.0385C35.1079 46.8304 36.6513 48.382 38.6078 49.6931C40.5643 50.9606 42.8251 52.0751 45.3903 53.0366C47.9554 53.9544 50.6945 54.7411 53.6075 55.3967L65.6072 58.2812C71.4332 59.5924 76.7809 61.3406 81.6503 63.5259C86.5198 65.7112 90.7371 68.399 94.3022 71.5895C97.8673 74.78 100.628 78.5387 102.585 82.8656C104.585 87.1924 105.606 92.153 105.65 97.7473C105.606 105.964 103.519 113.088 99.3891 119.119C95.3022 125.107 89.3893 129.762 81.6503 133.083C73.9548 136.361 64.6724 138 53.8031 138C43.0208 138 33.6297 136.339 25.6299 133.018C17.6735 129.696 11.4563 124.779 6.9781 118.267C2.54342 111.711 0.217387 103.604 0 93.9449H27.3255C27.6298 98.4465 28.9124 102.205 31.1732 105.221C33.4775 108.193 36.5427 110.444 40.3686 111.973C44.2381 113.459 48.6076 114.202 53.4771 114.202C58.2595 114.202 62.4116 113.503 65.9333 112.105C69.4984 110.706 72.2592 108.761 74.2157 106.27C76.1722 103.779 77.1504 100.916 77.1504 97.6817C77.1504 94.666 76.2591 92.1311 74.4766 90.077C72.7375 88.0228 70.1723 86.2746 66.7811 84.8323C63.4333 83.39 59.3247 82.0789 54.4553 80.8988L39.9121 77.2276C28.6515 74.4741 19.7604 70.1691 13.2388 64.3126C6.71724 58.4561 3.47818 50.5672 3.52166 40.6461C3.47818 32.5169 5.63031 25.4147 9.97804 19.3397C14.3692 13.2646 20.3908 8.52257 28.0428 5.11354C35.6948 1.70451 44.3903 0 54.1292 0C64.042 0 72.694 1.70451 80.0851 5.11354C87.5198 8.52257 93.3022 13.2646 97.4326 19.3397C101.563 25.4147 103.693 32.4513 103.824 40.4494H76.7591Z"
+              fill="#0E6131"
+            />
+            <path
+              d="M148.774 1.83563L181.056 103.844H182.295L214.642 1.83563H245.946L199.903 136.099H163.513L117.405 1.83563H148.774Z"
+              fill="#0E6131"
+            />
+            <path
+              d="M377.225 68.9672C377.225 83.6086 374.464 96.0646 368.943 106.335C363.465 116.606 355.987 124.451 346.508 129.871C337.074 135.247 326.465 137.934 314.683 137.934C302.814 137.934 292.162 135.225 282.727 129.805C273.293 124.386 265.836 116.541 260.358 106.27C254.88 95.999 252.141 83.5648 252.141 68.9672C252.141 54.3259 254.88 41.8698 260.358 31.5991C265.836 21.3283 273.293 13.505 282.727 8.12922C292.162 2.70974 302.814 0 314.683 0C326.465 0 337.074 2.70974 346.508 8.12922C355.987 13.505 363.465 21.3283 368.943 31.5991C374.464 41.8698 377.225 54.3259 377.225 68.9672ZM348.595 68.9672C348.595 59.4831 347.182 51.485 344.356 44.9729C341.574 38.4608 337.639 33.5221 332.552 30.1568C327.465 26.7915 321.509 25.1088 314.683 25.1088C307.857 25.1088 301.901 26.7915 296.814 30.1568C291.727 33.5221 287.771 38.4608 284.945 44.9729C282.162 51.485 280.771 59.4831 280.771 68.9672C280.771 78.4513 282.162 86.4494 284.945 92.9615C287.771 99.4736 291.727 104.412 296.814 107.778C301.901 111.143 307.857 112.826 314.683 112.826C321.509 112.826 327.465 111.143 332.552 107.778C337.639 104.412 341.574 99.4736 344.356 92.9615C347.182 86.4494 348.595 78.4513 348.595 68.9672Z"
+              fill="#0E6131"
+            />
+            <path
+              d="M382.247 1.83563H413.876L444.332 59.658H445.637L476.092 1.83563H507.722L459.006 88.6347V136.099H430.963V88.6347L382.247 1.83563Z"
+              fill="#0E6131"
+            />
+            <path
+              d="M648.148 1.83563H676.387V89.028C676.387 98.8181 674.061 107.384 669.409 114.727C664.8 122.069 658.344 127.795 650.04 131.903C641.735 135.968 632.062 138 621.019 138C609.932 138 600.236 135.968 591.932 131.903C583.628 127.795 577.172 122.069 572.563 114.727C567.954 107.384 565.65 98.8181 565.65 89.028V1.83563H593.889V86.6024C593.889 91.7159 594.997 96.2613 597.215 100.238C599.476 104.216 602.649 107.341 606.736 109.613C610.823 111.886 615.584 113.022 621.019 113.022C626.497 113.022 631.257 111.886 635.301 109.613C639.388 107.341 642.54 104.216 644.757 100.238C647.018 96.2613 648.148 91.7159 648.148 86.6024V1.83563Z"
+              fill="#0E6131"
+            />
+            <path
+              d="M699.62 136.099V1.83563H752.314C762.445 1.83563 771.075 3.78052 778.205 7.67031C785.335 11.5164 790.77 16.8703 794.509 23.7321C798.292 30.5501 800.183 38.4171 800.183 47.333C800.183 56.2489 798.27 64.1159 794.444 70.934C790.618 77.752 785.075 83.0622 777.814 86.8646C770.597 90.667 761.858 92.5682 751.597 92.5682H718.011V69.8195H747.032C752.467 69.8195 756.945 68.8798 760.466 67.0005C764.032 65.0774 766.684 62.4333 768.423 59.0679C770.205 55.6589 771.097 51.7473 771.097 47.333C771.097 42.8751 770.205 38.9853 768.423 35.6637C766.684 32.2983 764.032 29.6979 760.466 27.8622C756.901 25.9829 752.38 25.0432 746.902 25.0432H727.859V136.099H699.62Z"
+              fill="#0E6131"
+            />
+            <path
+              d="M907.088 45.2352C906.175 42.0447 904.893 39.2257 903.24 36.7781C901.588 34.2869 899.567 32.1891 897.175 30.4846C894.828 28.7363 892.132 27.4033 889.089 26.4855C886.089 25.5677 882.763 25.1088 879.11 25.1088C872.285 25.1088 866.285 26.8133 861.111 30.2223C855.981 33.6314 851.981 38.5919 849.111 45.104C846.242 51.5724 844.807 59.4831 844.807 68.8361C844.807 78.1891 846.22 86.1435 849.046 92.6993C851.872 99.2551 855.872 104.259 861.046 107.712C866.219 111.121 872.328 112.826 879.371 112.826C885.763 112.826 891.219 111.689 895.741 109.417C900.306 107.1 903.784 103.844 906.175 99.6485C908.61 95.4527 909.827 90.4922 909.827 84.7667L915.566 85.619H881.132V64.247H937.022V81.161C937.022 92.9615 934.544 103.101 929.588 111.58C924.631 120.015 917.805 126.527 909.11 131.116C900.414 135.662 890.458 137.934 879.241 137.934C866.719 137.934 855.72 135.159 846.242 129.609C836.764 124.014 829.372 116.082 824.068 105.811C818.808 95.4964 816.177 83.2589 816.177 69.0983C816.177 58.2157 817.742 48.5131 820.873 39.9905C824.047 31.4242 828.481 24.1691 834.177 18.2252C839.872 12.2812 846.503 7.75772 854.068 4.65463C861.633 1.55154 869.828 0 878.654 0C886.219 0 893.262 1.11449 899.784 3.34347C906.305 5.52874 912.088 8.63183 917.131 12.6527C922.218 16.6736 926.37 21.4594 929.588 27.01C932.805 32.5169 934.87 38.5919 935.783 45.2352H907.088Z"
+              fill="#0E6131"
+            />
+            <path
+              d="M958.234 136.099V1.83563H1010.93C1021.01 1.83563 1029.62 3.64941 1036.75 7.27696C1043.93 10.8608 1049.38 15.9525 1053.12 22.552C1056.91 29.1078 1058.8 36.8218 1058.8 45.6941C1058.8 54.61 1056.88 62.2803 1053.06 68.705C1049.23 75.086 1043.69 79.981 1036.43 83.39C1029.21 86.799 1020.47 88.5036 1010.21 88.5036H974.929V65.6893H1005.65C1011.04 65.6893 1015.52 64.9463 1019.08 63.4603C1022.65 61.9743 1025.3 59.7454 1027.04 56.7734C1028.82 53.8014 1029.71 50.1083 1029.71 45.6941C1029.71 41.2361 1028.82 37.4774 1027.04 34.4181C1025.3 31.3587 1022.62 29.0423 1019.01 27.4689C1015.45 25.8518 1010.95 25.0432 1005.52 25.0432H986.472V136.099H958.234ZM1030.36 74.9986L1063.56 136.099H1032.38L999.907 74.9986H1030.36Z"
+              fill="#0E6131"
+            />
+            <path
+              d="M1101.77 136.099H1071.51L1117.62 1.83563H1154.01L1200.05 136.099H1169.79L1136.34 32.5169H1135.29L1101.77 136.099ZM1099.88 83.3245H1171.36V105.483H1099.88V83.3245Z"
+              fill="#0E6131"
+            />
+            <path
+              d="M1263.48 136.099H1216.13V1.83563H1263.87C1277.3 1.83563 1288.87 4.52352 1298.56 9.89929C1308.26 15.2314 1315.71 22.9017 1320.93 32.9102C1326.19 42.9188 1328.82 54.8941 1328.82 68.8361C1328.82 82.8219 1326.19 94.8409 1320.93 104.893C1315.71 114.945 1308.21 122.659 1298.43 128.035C1288.69 133.411 1277.04 136.099 1263.48 136.099ZM1244.37 111.777H1262.3C1270.65 111.777 1277.67 110.291 1283.37 107.319C1289.11 104.303 1293.41 99.6485 1296.28 93.3549C1299.19 87.0176 1300.65 78.8447 1300.65 68.8361C1300.65 58.915 1299.19 50.8076 1296.28 44.514C1293.41 38.2204 1289.13 33.5876 1283.43 30.6157C1277.74 27.6437 1270.72 26.1577 1262.37 26.1577H1244.37V111.777Z"
+              fill="#0E6131"
+            />
+            <path
+              d="M1349.74 136.099V1.83563H1439.74V25.2399H1377.98V57.2323H1435.11V80.6366H1377.98V112.695H1440V136.099H1349.74Z"
+              fill="#0E6131"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="animate-wrap">
+        <div class="animate-title-mobile">
+          <h3>Svoy Upgrade</h3>
+          <span>Наши победители</span>
+        </div>
+        <div class="our-winners">
+          <div class="wrapper">
+            <div class="images-slider-wrap">
+              <div class="slider-navigation">
+                <button type="button" class="slick-prev">
+                  <img src="img/slider-arrow2.svg" alt="" />
+                  <img src="img/slider-arr-green.svg" alt="" class="hide" />
+                </button>
+                <button type="button" class="slick-next">
+                  <img src="img/slider-arrow2.svg" alt="" />
+                  <img src="img/slider-arr-green.svg" alt="" class="hide" />
+                </button>
+              </div>
+              <div class="images-slider">
+                <div class="item">
+                  <div class="item-info">
+                    <img src="img/winner-icon.png" alt="" />
+                    <span>Победитель Аружан Б. Конкурс от 23.12.23</span>
+                  </div>
+                  <img src="img/winners-img1.jpg" alt="" />
+                </div>
+                <div class="item">
+                  <div class="item-info">
+                    <img src="img/winner-icon.png" alt="" />
+                    <span>Победитель Аружан Б. Конкурс от 23.12.23</span>
+                  </div>
+                  <img src="img/winners-img2.jpg" alt="" />
+                </div>
+                <div class="item">
+                  <div class="item-info">
+                    <img src="img/winner-icon.png" alt="" />
+                    <span>Победитель Аружан Б. Конкурс от 23.12.23</span>
+                  </div>
+                  <img src="img/winners-img3.jpg" alt="" />
+                </div>
+                <div class="item">
+                  <div class="item-info">
+                    <img src="img/winner-icon.png" alt="" />
+                    <span>Победитель Аружан Б. Конкурс от 23.12.23</span>
+                  </div>
+                  <img src="img/winners-img1.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <h2>Наши победители</h2>
+            <div class="images-slider-wrap2">
+              <div class="slider-navigation">
+                <button type="button" class="slick-prev">
+                  <img src="img/slider-arrow2.svg" alt="" />
+                </button>
+                <button type="button" class="slick-next">
+                  <img src="img/slider-arrow2.svg" alt="" />
+                </button>
+              </div>
+              <div class="images-slider2">
+                <div class="item">
+                  <div class="item-info">
+                    <img src="img/winner-icon.png" alt="" />
+                    <span>Победитель Аружан Б. Конкурс от 23.12.23</span>
+                  </div>
+                  <img src="img/winners-img4.jpg" alt="" />
+                </div>
+                <div class="item">
+                  <div class="item-info">
+                    <img src="img/winner-icon.png" alt="" />
+                    <span>Победитель Аружан Б. Конкурс от 23.12.23</span>
+                  </div>
+                  <img src="img/winners-img5.jpg" alt="" />
+                </div>
+                <div class="item">
+                  <div class="item-info">
+                    <img src="img/winner-icon.png" alt="" />
+                    <span>Победитель Аружан Б. Конкурс от 23.12.23</span>
+                  </div>
+                  <img src="img/winners-img6.jpg" alt="" />
+                </div>
+                <div class="item">
+                  <div class="item-info">
+                    <img src="img/winner-icon.png" alt="" />
+                    <span>Победитель Аружан Б. Конкурс от 23.12.23</span>
+                  </div>
+                  <img src="img/winners-img1.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="infos-wrap">
+            <h2>Сколько у вас комнат?</h2>
+            <ul class="tab-menu">
+              <li class="active"><button type="button">1 комната</button></li>
+              <li><button type="button">2 комнаты</button></li>
+              <li><button type="button">3 комнаты</button></li>
+              <li><button type="button">4 комнаты</button></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-content-item active">
+                <div class="info info1">
+                  <div class="text-wrap">
+                    <h2>Вы выигрываете +1 комнатну!</h2>
+                    <h3>
+                      Обладатель 1 комнатной выигрывает 2-х комнатную квартиру
+                    </h3>
+                    <p>
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!
+                    </p>
+                  </div>
+                  <div class="img-wrap">
+                    <img src="img/img1.png" alt="" class="img1" />
+                  </div>
+                </div>
+              </div>
+              <div class="tab-content-item">
+                <div class="info info2">
+                  <div class="text-wrap">
+                    <h2>Вы выигрываете +1 комнатну!</h2>
+                    <h3>
+                      Обладатель 2 комнатной выигрывает 3-х комнатную квартиру
+                    </h3>
+                    <p>
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!
+                    </p>
+                  </div>
+                  <div class="img-wrap">
+                    <img src="img/img2.png" alt="" class="img1" />
+                  </div>
+                </div>
+              </div>
+              <div class="tab-content-item">
+                <div class="info info3">
+                  <div class="text-wrap">
+                    <h2>Вы выигрываете +1 комнатну!</h2>
+                    <h3>
+                      Обладатель 3 комнатной выигрывает 4-х комнатную квартиру
+                    </h3>
+                    <p>
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!
+                    </p>
+                  </div>
+                  <div class="img-wrap">
+                    <img src="img/img3.png" alt="" class="img1" />
+                  </div>
+                </div>
+              </div>
+              <div class="tab-content-item">
+                <div class="info info4">
+                  <div class="text-wrap">
+                    <h2>Вы выигрываете +1 комнатну!</h2>
+                    <h3>Обладатель 4 комнатной выигрывает +1 комнату</h3>
+                    <p>
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!
+                    </p>
+                  </div>
+                  <div class="img-wrap">
+                    <img src="img/img4.png" alt="" class="img1" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-us">
+      <div class="wrapper">
+        <div class="title-wrap">
+          <h2
+            class="main-title"
+            data-aos="fade-right"
+            data-aos-offset="-100"
+            data-aos-delay="100"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+          >
+            Свяжитесь с нами
+          </h2>
+        </div>
+        <div class="contact-info-wrap">
+          <div class="contact-form-wrap">
+            <img src="img/contact-bg.png" alt="" class="bg" />
+            <h3>Оставьте заявку мы вам обязательно перезвоним!</h3>
+            <p>
+              Заполните форму обратной связи, чтобы задать все интересующие Вас
+              вопросы и оставить запрос на поиск идеальной квартиры.
+            </p>
+            <form class="contact-form">
+              <div class="inputs">
+                <input type="text" placeholder="Ваше имя" />
+                <input
+                  type="tel"
+                  class="phone-number-input"
+                  placeholder="+ 7 700 000 00 00"
+                />
+                <div class="select-wrap">
+                  <select>
+                    <option value="1">Жилой комплекс</option>
+                    <option value="2">Первый</option>
+                    <option value="3">Второй</option>
+                  </select>
+                </div>
+              </div>
+              <div class="btn-wrap">
+                <button class="green-btn" type="button">Оставить заявку</button>
+                <p>
+                  Нажимая кнопку “отправить” вы соглашаетесь с
+                  <a href="#"> политикой обработки данных</a>
+                </p>
+              </div>
+            </form>
+          </div>
+          <div id="map2"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-top">
+          <div class="footer-menu-wrap">
+            <a href="index.html" class="footer-logo hide">
+              <img src="img/logo.svg" alt="" />
+            </a>
+            <ul class="main-menu">
+              <li><a href="about.html">О компании</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+              <li><a href="news.html">Новости</a></li>
+              <li>
+                <button type="button">Проекты</button>
+                <ul class="sub-menu">
+                  <li><a href="current-projects.html">Текущие проекты</a></li>
+                  <li><a href="completed-projects.html">Завершенные</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="social-menu">
+              <li>
+                <a href="#"></a>
+              </li>
+              <li>
+                <a href="#"></a>
+              </li>
+              <li>
+                <a href="#"></a>
+              </li>
+              <li>
+                <a href="#"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="links">
+            <a href="mailto:infosales@svoydom.kz">infosales@svoydom.kz</a>
+            <a href="tel:+77008360906">+7 700 836 09 06</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="top">
+            <a href="index.html" class="footer-logo">
+              <img src="img/logo.svg" alt="" />
+            </a>
+            <a href="#" class="green-btn">Написать в Whatsapp</a>
+          </div>
+          <p>
+            Товарищество с ограниченной ответственностью "SVOYDOM Astana" Для
+            наших клиентов мы всегда готовы подобрать квартиру по оптимальной
+            цене с учетом ваших особенных пожеланий как для комфортной жизни,
+            так для создания и ведения успешного бизнеса.
+          </p>
+          <p>Все права защищены &copy; 2023</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.inputmask.bundle.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+    <script>
+      let center2 = [55.707076, 37.385825];
+      let center3 = [55.847076, 37.485825];
+      let center4 = [55.687076, 36.885825];
+
+      function init() {
+        let map = new ymaps.Map("map2", {
+          center: center2,
+          zoom: 9,
+          controls: [],
+        });
+
+        let placemark2 = new ymaps.Placemark(
+          center2,
+          {
+            balloonContent: `
+            
+    <div class="balloon-wrap">
+      <div class="img-wrap">
+        <img src="img/balloon-img.jpg" alt="" />
+      </div>
+      <div class="bottom-wrap">
+      <span class="address"
+        >Адрес г. Алматы ул. Макатаева 129в, Алматы 050000</span
+      >
+    </div>
+    </div>
+            
+            `,
+          },
+          {
+            iconLayout: "default#image",
+            iconImageHref: "img/map-marker.svg",
+            iconImageOffset: [0, 0],
+            iconImageSize: [100, 34],
+            hideIconOnBalloonOpen: false,
+          }
+        );
+
+        map.geoObjects.add(placemark2);
+        map.behaviors.disable("scrollZoom");
+      }
+      ymaps.ready(init);
+    </script>
+  </body>
+</html>
