@@ -50,6 +50,10 @@ $(document).ready(function () {
     $(this).closest(".sub-menu").find(".links").addClass("show");
   });
 
+  $(".sub-menu .back").on("click", function () {
+    $(this).closest(".sub-menu").removeClass("show");
+  });
+
   $bannerSlider = false;
   function slider() {
     if ($(window).width() < 1025) {

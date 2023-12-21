@@ -150,14 +150,16 @@
             margin-left: 14px;
           }
           img {
-            width: 16px;
+            width: 20px;
+            height: 20px;
           }
           svg {
             margin: auto;
             transition: 0.3s;
             fill: #b1bfcd;
             @media (max-width: 1024px) {
-              width: 16px;
+              width: 20px;
+              height: 20px;
             }
           }
           .count {
@@ -439,7 +441,7 @@
               padding: 8px 20px;
               border-bottom: 1px solid #ebf0f4;
             }
-            button {
+            > button {
               font-size: 16px;
               color: $grey;
               @media (max-width: 1024px) {
@@ -488,19 +490,25 @@
               z-index: -10;
               @media (max-width: 1024px) {
                 min-width: inherit;
-                transform: translateY(-100%);
                 &.show {
                   visibility: visible;
-                  transform: translateY(0);
                   opacity: 1;
                   z-index: 10;
                   @include dir-col;
-                  top: 0;
+                  top: -66px;
                   box-shadow: none;
                   border-radius: 0;
-                  height: calc(100vh - 66px);
+                  height: 100vh;
                   padding: 0;
                   justify-content: flex-start;
+                  .back {
+                    padding: 15px 20px 25px;
+                    @include flex;
+                    @include align-center;
+                    img {
+                      margin-right: 10px;
+                    }
+                  }
                 }
               }
               .info {
@@ -562,6 +570,14 @@
                       background: white;
                       width: 100%;
                       border-top: 1px solid #ebf0f4;
+                      .back {
+                        padding: 15px 20px 25px;
+                        @include flex;
+                        @include align-center;
+                        img {
+                          margin-right: 10px;
+                        }
+                      }
                     }
                   }
                   a {
@@ -649,14 +665,15 @@
     .title-wrap {
       margin-bottom: 35px;
       @media (max-width: 767px) {
-        max-width: 80%;
+        max-width: 470px;
         margin: 0 auto 20px;
       }
       .main-title {
         margin-bottom: 20px;
         @media (max-width: 767px) {
           text-align: center;
-          margin-bottom: 15px;
+          max-width: 270px;
+          margin: 0 auto 15px;
         }
       }
       .about-us-subtitle {
@@ -728,7 +745,7 @@
       .read {
         color: $grey;
         @media (max-width: 767px) {
-          color: $green;
+          color: $pink;
         }
       }
       .slider-for {
@@ -870,7 +887,7 @@
         width: 12px;
         height: 12px;
         border-radius: 50px;
-        background: #ebf0f4;
+        background: rgba($pink, 0.1);
         opacity: 1;
         transition: 0.3s;
       }
@@ -891,10 +908,10 @@
       button {
         &:before {
           opacity: 1;
-          background: #4fd0d8;
+          background: $pink;
         }
         &:after {
-          background: #d4f4f1;
+          background: rgba($pink, 0.3);
         }
       }
     }
@@ -903,10 +920,13 @@
 
 .banner-slider-wrap {
   margin-bottom: 70px;
-  margin-top: 40px;
+  margin-top: 20px;
   overflow: hidden;
   @media (max-width: 1024px) {
     margin-top: 0;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 15px;
   }
   .wrapper {
     @media (max-width: 1024px) {
@@ -1037,6 +1057,9 @@
 
 .why-us {
   margin: 35px 0;
+  @media (max-width: 767px) {
+    margin-top: 20px;
+  }
   .wrapper {
     .main-title {
       margin-bottom: 35px;
@@ -1440,6 +1463,9 @@
 
 .blog {
   margin: 70px 0;
+  @media (max-width: 767px) {
+    margin-top: 50px;
+  }
   .wrapper {
     @media (max-width: 1024px) {
       padding-right: 0;
@@ -1488,7 +1514,7 @@
       }
       .slick-dots {
         @media (max-width: 1024px) {
-          bottom: -40px;
+          bottom: -45px;
         }
       }
     }
@@ -1549,11 +1575,14 @@
         line-height: 20px;
       }
     }
-    .green {
+    .grey {
       margin-bottom: 0;
-      color: $green;
+      color: $grey;
       height: auto;
       overflow: visible;
+      @media (max-width: 767px) {
+        color: $pink;
+      }
     }
     b {
       white-space: nowrap;
@@ -1580,7 +1609,7 @@
       }
     }
     .text-wrap {
-      .green {
+      .grey {
         color: $pink;
       }
     }
@@ -1764,11 +1793,17 @@
 .info-slider-wrap {
   margin: 70px 0;
   overflow: hidden;
+  @media (max-width: 767px) {
+    margin: 50px 0;
+  }
   .wrapper {
     position: relative;
     z-index: 0;
     .main-title {
       margin-bottom: 20px;
+      @media (max-width: 767px) {
+        text-align: center;
+      }
     }
 
     > .select-wrap {
