@@ -488,6 +488,9 @@
               transition: 0.1s;
               opacity: 0;
               z-index: -10;
+              .back {
+                display: none;
+              }
               @media (max-width: 1024px) {
                 min-width: inherit;
                 &.show {
@@ -554,6 +557,9 @@
                     opacity: 0;
                     z-index: -1;
                     position: absolute;
+                    .back {
+                      display: none;
+                    }
                     &.show {
                       visibility: visible;
                       transform: translateY(-100%);

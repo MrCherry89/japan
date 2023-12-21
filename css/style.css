@@ -1726,6 +1726,9 @@ a:focus {
   opacity: 0;
   z-index: -10;
 }
+.header .wrapper .menu-wrap .info2 .menu2 li .sub-menu .back {
+  display: none;
+}
 @media (max-width: 1024px) {
   .header .wrapper .menu-wrap .info2 .menu2 li .sub-menu {
     min-width: inherit;
@@ -1809,6 +1812,9 @@ a:focus {
     opacity: 0;
     z-index: -1;
     position: absolute;
+  }
+  .header .wrapper .menu-wrap .info2 .menu2 li .sub-menu .info .links .back {
+    display: none;
   }
   .header .wrapper .menu-wrap .info2 .menu2 li .sub-menu .info .links.show {
     visibility: visible;
