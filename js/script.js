@@ -1,4 +1,55 @@
 $(document).ready(function () {
+  function renderAccountInformation(data, container) {
+    if (data.id === "") {
+      return "Select account";
+    }
+    const el = data.element;
+    const img = $(el).attr("data-img");
+    const title = $(el).attr("data-title");
+    return $(
+      `<div class='option-wrap'><img src=${img} /><span>${title}</span></div>`
+    );
+  }
+
+  $("#accountSelector").select2({
+    allowClear: false,
+    minimumResultsForSearch: -1,
+    templateResult: renderAccountInformation,
+    templateSelection: renderAccountInformation,
+  });
+
+  $(".mobile-search").on("click", function () {
+    $(".search-mobile").addClass("open");
+    $("body, html").addClass("overflow");
+  });
+
+  $(".search-close").on("click", function () {
+    $(".search-mobile").removeClass("open");
+    $("body, html").removeClass("overflow");
+  });
+
+  $(".drop-menu").on("click", function () {
+    $(".menu-wrap").addClass("open-menu");
+    $("body, html").addClass("overflow");
+  });
+
+  $(".close-menu").on("click", function () {
+    $(".menu-wrap").removeClass("open-menu");
+    $(".sub-menu .links").removeClass("show");
+    $(".sub-menu").removeClass("show");
+    $(".menu-wrap").removeClass("remove");
+    $("body, html").removeClass("overflow");
+  });
+
+  $(".menu2 li").on("click", function () {
+    $(this).find(".sub-menu").addClass("show");
+    $(".menu-wrap").addClass("remove");
+  });
+
+  $(".sub-menu .info b").on("click", function () {
+    $(this).closest(".sub-menu").find(".links").addClass("show");
+  });
+
   $bannerSlider = false;
   function slider() {
     if ($(window).width() < 1025) {
@@ -6,11 +57,17 @@ $(document).ready(function () {
         $(".banner-slider").slick({
           dots: true,
           arrows: false,
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           // variableWidth: true,
           infinite: false,
           responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
             {
               breakpoint: 501,
               settings: {
