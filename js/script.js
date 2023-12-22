@@ -41,8 +41,8 @@ $(document).ready(function () {
     $("body, html").removeClass("overflow");
   });
 
-  $(".menu2 li").on("click", function () {
-    $(this).find(".sub-menu").addClass("show");
+  $(".menu2 li > button").on("click", function () {
+    $(this).closest("li").find(".sub-menu").addClass("show");
     $(".menu-wrap").addClass("remove");
   });
 
@@ -52,6 +52,10 @@ $(document).ready(function () {
 
   $(".sub-menu .back").on("click", function () {
     $(this).closest(".sub-menu").removeClass("show");
+  });
+
+  $(".sub-menu .info .back").on("click", function () {
+    $(this).closest(".links").removeClass("show");
   });
 
   $bannerSlider = false;
