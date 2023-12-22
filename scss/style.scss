@@ -943,6 +943,9 @@
     @include flex;
     @include flex-wrap;
     @include justify-between;
+    .slick-dots {
+      margin-left: 10px;
+    }
     .item {
       width: calc((100% - 30px) / 2);
       padding: 50px 40px;
@@ -1519,6 +1522,7 @@
         }
       }
       .slick-dots {
+        margin-left: -10px;
         @media (max-width: 1024px) {
           bottom: -45px;
         }

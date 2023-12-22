@@ -2256,6 +2256,9 @@ a:focus {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
+.banner-slider-wrap .banner-slider .slick-dots {
+  margin-left: 10px;
+}
 .banner-slider-wrap .banner-slider .item {
   width: calc((100% - 30px) / 2);
   padding: 50px 40px;
@@ -2962,6 +2965,9 @@ a:focus {
   .blog .wrapper .blog-slider .info-item .text-wrap span {
     height: 40px;
   }
+}
+.blog .wrapper .blog-slider .slick-dots {
+  margin-left: -10px;
 }
 @media (max-width: 1024px) {
   .blog .wrapper .blog-slider .slick-dots {
