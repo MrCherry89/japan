@@ -14,6 +14,7 @@
     }
     .product-card-slider-wrap {
       width: 40%;
+      overflow: hidden;
       @media (max-width: 767px) {
         width: 100%;
       }
@@ -398,6 +399,16 @@
         margin: auto;
       }
     }
+  }
+}
+
+.test-link {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: block;
+  &:hover {
+    color: $pink;
   }
 }
 

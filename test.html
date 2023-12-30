@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="ru" class="fixed">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>JapanStyle</title>
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header-info">
+          <button class="drop-menu" type="button">
+            <img src="img/drop-menu.svg" alt="" />
+          </button>
+          <a href="index.html" class="logo">
+            <img src="img/logo.svg" alt="" />
+          </a>
+          <a href="index.html" class="logo-mobile">
+            <img src="img/flower.svg" alt="" />
+          </a>
+          <form class="search">
+            <input type="text" placeholder="Поиск" />
+            <button class="green-btn" type="button">
+              <img src="img/search.svg" alt="" />
+            </button>
+          </form>
+          <div class="search-mobile">
+            <div class="top">
+              <b>Найти товар</b>
+              <button class="search-close" type="button">
+                <img src="img/close-black.svg" alt="" />
+              </button>
+            </div>
+            <form class="search">
+              <input type="text" placeholder="Поиск" />
+              <button class="green-btn" type="button">
+                <img src="img/search.svg" alt="" />
+              </button>
+            </form>
+            <b>Последние запросы:</b>
+            <span>Товар под названием вы вводите что-то</span>
+            <span>Товар под названием вы вводите что-то</span>
+            <button class="clear" type="button">Очистить</button>
+          </div>
+          <div class="icons">
+            <a href="#" class="desktop-hide mobile-search">
+              <img src="img/search-grey.svg" alt="" />
+            </a>
+            <a href="#">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.82443 5.0263L3.64203 3.52963C3.57632 2.89515 3.03543 2.41266 2.38992 2.41266H1.71551C1.29822 2.41266 0.959961 2.07848 0.959961 1.66629C0.959961 1.2541 1.29822 0.919922 1.71551 0.919922H2.38992C3.81047 0.919922 5.0007 1.98164 5.14528 3.37771L5.28294 4.70695H20.6162C20.9332 4.70695 21.1714 4.99285 21.1104 5.30016L19.7708 12.049C19.4466 13.6828 17.9971 14.8613 16.3119 14.8613H8.28333C8.51488 15.8706 9.42794 16.6023 10.493 16.6023H16.8165C16.8537 16.6023 16.8907 16.605 16.8722 16.6083C16.9276 16.6043 16.9832 16.6023 17.0391 16.6023C18.2907 16.6023 19.3053 17.6047 19.3053 18.8411C19.3053 20.0776 18.2907 21.0799 17.0391 21.0799C15.7875 21.0799 14.7729 20.0776 14.7729 18.8411C14.7729 18.5835 14.8171 18.3319 14.9019 18.095H12.1267C12.2114 18.3319 12.2556 18.5835 12.2556 18.8411C12.2556 20.0776 11.241 21.0799 9.98944 21.0799C8.73783 21.0799 7.72324 20.0776 7.72324 18.8411C7.72324 18.2958 7.92191 17.7819 8.27103 17.3814C7.4122 16.7635 6.84565 15.8104 6.7358 14.7467L6.7242 14.6344C5.49457 14.1719 4.58707 13.0477 4.46619 11.6823L4.16169 8.24294C4.15655 8.22166 4.15277 8.19981 4.15045 8.17746L3.82443 5.0263ZM9.98944 19.8361C10.5456 19.8361 10.9965 19.3906 10.9965 18.8411C10.9965 18.2916 10.5456 17.8462 9.98944 17.8462C9.43323 17.8462 8.98234 18.2916 8.98234 18.8411C8.98234 19.3906 9.43323 19.8361 9.98944 19.8361ZM17.0391 19.8361C17.5953 19.8361 18.0462 19.3906 18.0462 18.8411C18.0462 18.2916 17.5953 17.8462 17.0391 17.8462C16.4829 17.8462 16.032 18.2916 16.032 18.8411C16.032 19.3906 16.4829 19.8361 17.0391 19.8361Z"
+                />
+              </svg>
+              <span class="count">3</span>
+            </a>
+            <a href="#">
+              <svg
+                width="18"
+                height="16"
+                viewBox="0 0 18 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.38128 2.13413C11.1608 0.355354 14.0458 0.355354 15.8253 2.13413C17.6049 3.91302 17.6049 6.79724 15.8253 8.57612L9.33931 15.0595C9.15187 15.2469 8.84806 15.2469 8.66062 15.0595L2.17465 8.57612C0.395069 6.79724 0.395069 3.91302 2.17465 2.13413C3.95414 0.355354 6.83917 0.355354 8.61865 2.13413L8.99997 2.5153L9.38128 2.13413Z"
+                />
+              </svg>
+            </a>
+            <button type="button" class="open-btn">
+              <svg
+                width="17"
+                height="19"
+                viewBox="0 0 17 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.19458 0C6.4767 0 4.82918 0.682425 3.61446 1.89715C2.39974 3.11187 1.71731 4.75939 1.71731 6.47727V11.5295L0.283675 13.6886C0.111838 13.9536 0.0143701 14.2598 0.00147075 14.5754C-0.0114286 14.8909 0.0607146 15.2041 0.210351 15.4822C0.359988 15.7603 0.581617 15.993 0.852045 16.1561C1.12247 16.3191 1.43176 16.4065 1.74754 16.4091H14.6416C14.9594 16.408 15.2711 16.321 15.5434 16.1573C15.8158 15.9936 16.0389 15.7592 16.1889 15.479C16.339 15.1989 16.4104 14.8833 16.3957 14.5659C16.381 14.2484 16.2808 13.9408 16.1055 13.6757L14.6719 11.5295V6.47727C14.6719 4.75939 13.9894 3.11187 12.7747 1.89715C11.56 0.682425 9.91246 0 8.19458 0ZM8.19458 19C8.72986 18.9994 9.25182 18.833 9.68869 18.5237C10.1256 18.2144 10.4559 17.7774 10.6344 17.2727H5.75481C5.93324 17.7774 6.26359 18.2144 6.70047 18.5237C7.13735 18.833 7.6593 18.9994 8.19458 19Z"
+                />
+              </svg>
+              <span class="count">11</span>
+              <div class="hide-wrap">
+                <div class="scroll-wrap">
+                  <a href="#" class="item">
+                    <span class="text"
+                      >Вы получили промокод за покупку товара
+                    </span>
+                    <span class="pink">“JAPANSTYLE” </span>
+                  </a>
+                  <a href="#" class="item">
+                    <span class="text"
+                      >Вы получили ответ на комментарий под товаром
+                    </span>
+                    <span class="pink">“Японские духи....”</span>
+                  </a>
+                  <a href="#" class="item">
+                    <span class="text"
+                      >Вы получили ответ на комментарий под товаром
+                    </span>
+                    <span class="pink">“Японские духи....”</span>
+                  </a>
+                  <a href="#" class="item">
+                    <span class="text"
+                      >Вы получили ответ на комментарий под товаром
+                    </span>
+                    <span class="pink">“Японские духи....”</span>
+                  </a>
+                  <a href="#" class="item">
+                    <span class="text"
+                      >Вы получили ответ на комментарий под товаром
+                    </span>
+                    <span class="pink">“Японские духи....”</span>
+                  </a>
+                  <a href="#" class="item">
+                    <span class="text"
+                      >Вы получили ответ на комментарий под товаром
+                    </span>
+                    <span class="pink">“Японские духи....”</span>
+                  </a>
+                </div>
+              </div>
+            </button>
+            <a href="#" class="desktop-hide">
+              <img src="img/user.svg" alt="" />
+            </a>
+          </div>
+          <div class="login-links">
+            <a href="#" class="registration">Регистрация</a>
+            <a href="#" class="login">или Вход</a>
+          </div>
+        </div>
+        <div class="menu-wrap">
+          <div class="scroll-wrap">
+            <div class="close-menu">
+              <img src="img/close.svg" alt="" />
+            </div>
+            <div class="info1">
+              <ul class="social-menu">
+                <li>
+                  <a href="#"></a>
+                </li>
+                <li>
+                  <a href="#"></a>
+                </li>
+                <li>
+                  <a href="#"></a>
+                </li>
+                <li>
+                  <a href="#"></a>
+                </li>
+                <li class="hide">
+                  <a href="#"></a>
+                </li>
+              </ul>
+              <ul class="main-menu">
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+              <div class="city">
+                <span>Страна: </span>
+                <div class="select-wrap style2">
+                  <select>
+                    <option value="1" selected>Россия</option>
+                    <option value="2">Сша</option>
+                    <option value="3">Япония</option>
+                  </select>
+                </div>
+              </div>
+              <div class="price">
+                <span>Валюта: </span>
+                <div class="select-wrap style2">
+                  <select>
+                    <option value="1" selected>Rub</option>
+                    <option value="2">Usd</option>
+                    <option value="3">Jpy</option>
+                  </select>
+                </div>
+              </div>
+              <div class="lang-select">
+                <select
+                  id="accountSelector"
+                  name="accountSelector"
+                  data-test-id="accountSelector"
+                  class="form-control"
+                  data-placeholder="Select account"
+                >
+                  <option
+                    data-img="img/ru.svg"
+                    data-title="Русский"
+                    value="Русский"
+                    selected
+                  >
+                    Русский
+                  </option>
+                  <option
+                    data-img="img/us.svg"
+                    data-title="English"
+                    value="English"
+                  >
+                    English
+                  </option>
+                  <option
+                    data-img="img/japan.svg"
+                    data-title="日本語"
+                    value="日本語"
+                  >
+                    日本語
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="info2">
+              <ul class="menu2">
+                <li>
+                  <button>Для детей</button>
+                  <div class="sub-menu">
+                    <div class="back">
+                      <img src="img/back-icon.svg" alt="" />
+                      <span>Для детей</span>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <button>Для женщин</button>
+                  <div class="sub-menu">
+                    <div class="back">
+                      <img src="img/back-icon.svg" alt="" />
+                      <span>Для детей</span>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <button>Для мужчин</button>
+                  <div class="sub-menu">
+                    <div class="back">
+                      <img src="img/back-icon.svg" alt="" />
+                      <span>Для детей</span>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <button>Для дома</button>
+                  <div class="sub-menu">
+                    <div class="back">
+                      <img src="img/back-icon.svg" alt="" />
+                      <span>Для детей</span>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <button>Японская аптека</button>
+                  <div class="sub-menu">
+                    <div class="back">
+                      <img src="img/back-icon.svg" alt="" />
+                      <span>Для детей</span>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <button>Скидки</button>
+                  <div class="sub-menu">
+                    <div class="back">
+                      <img src="img/back-icon.svg" alt="" />
+                      <span>Для детей</span>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <button>Одежда</button>
+                  <div class="sub-menu">
+                    <div class="back">
+                      <img src="img/back-icon.svg" alt="" />
+                      <span>Для детей</span>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <a href="index.html" class="logo-mobile-small">
+              <img src="img/mobile-logo.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <a href="index.html" class="test-link">Главная</a>
+      <a href="add-address.html" class="test-link">Добавить адрес</a>
+      <a href="authorization.html" class="test-link">Авторизация</a>
+      <a href="register.html" class="test-link">Зарегистрироваться</a>
+      <a href="basket.html" class="test-link">Корзина</a>
+      <a href="placing-order.html" class="test-link">Оформление заказа</a>
+      <a href="delivery-method.html" class="test-link">Способ доставки</a>
+      <a href="checking-order.html" class="test-link">Проверка</a>
+      <a href="blog.html" class="test-link">Блог</a>
+      <a href="blog-in.html" class="test-link">Блог in</a>
+      <a href="catalog.html" class="test-link">Каталог</a>
+      <a href="contacts.html" class="test-link">Контакты</a>
+      <a href="details.html" class="test-link">Мои данные</a>
+      <a href="faq.html" class="test-link">Ответы и вопросы</a>
+      <a href="favorites.html" class="test-link">Избранное</a>
+      <a href="forgot-password.html" class="test-link">Авторизация</a>
+      <a href="history-orders.html" class="test-link">История заказов</a>
+      <a href="order-processed.html" class="test-link">Заказ оформлен</a>
+      <a href="order-tracking.html" class="test-link">Отслеживание заказа</a>
+      <a href="product-card.html" class="test-link">Карточка товара</a>
+      <a href="product-selection.html" class="test-link">Подбор товара </a>
+      <a href="settings.html" class="test-link">Настройки</a>
+    </div>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-top">
+          <div class="logo-wrap">
+            <a href="index.html" class="footer-logo">
+              <img src="img/logo.svg" alt="" />
+            </a>
+            <p>
+              Компания Japan Style, уже 10-й год, занимается поставками товаров
+              в широком ассортименте, напрямую из Японии оптом и в розницу.
+            </p>
+          </div>
+          <div class="footer-info">
+            <h3>Магазин</h3>
+            <ul class="footer-menu">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">Условия возврата/Обмен</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Политика конфиденциальности</a></li>
+            </ul>
+          </div>
+          <div class="footer-info">
+            <h3>Категории</h3>
+            <ul class="footer-menu">
+              <li>
+                <a href="#">Мужчинам</a>
+              </li>
+              <li>
+                <a href="#">Женщинам </a>
+              </li>
+              <li>
+                <a href="#">Детям </a>
+              </li>
+              <li>
+                <a href="#">Аптека </a>
+              </li>
+              <li>
+                <a href="#">Скидки </a>
+              </li>
+              <li>
+                <a href="#"> Одежда </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contacts">
+            <h3>Контакты</h3>
+            <div class="info">
+              <img src="img/contacts-icon1.svg" alt="" />
+              <span
+                >г. Алматы, ул. Гоголя, д. 120 /ул. Досмухамедова, д. 20</span
+              >
+            </div>
+            <div class="info">
+              <img src="img/contacts-icon2.svg" alt="" />
+              <span>+7 (727) 279-00-82</span>
+            </div>
+            <div class="info">
+              <img src="img/contacts-icon3.svg" alt="" />
+              <span>adam.tetyankuev@gmail.com</span>
+            </div>
+            <h5>Подписаться на рассылку</h5>
+            <form class="subscribe-form" id="subscribe-form">
+              <input type="email" name="email" placeholder="Ваш e-mail адрес" />
+              <button class="green-btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="copyright">
+            Japanstyle &copy; Copyright 2023, Все права защищены
+          </p>
+          <div class="logos">
+            <a href="#"><img src="img/brand-logo1.svg" alt="" /></a>
+            <a href="#"><img src="img/brand-logo2.svg" alt="" /></a>
+            <a href="#"><img src="img/brand-logo3.svg" alt="" /></a>
+            <a href="#"><img src="img/brand-logo4.svg" alt="" /></a>
+            <a href="#"><img src="img/brand-logo5.svg" alt="" /></a>
+          </div>
+          <ul class="social-menu">
+            <li>
+              <a href="#"></a>
+            </li>
+            <li>
+              <a href="#"></a>
+            </li>
+            <li>
+              <a href="#"></a>
+            </li>
+            <li>
+              <a href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.inputmask.bundle.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
