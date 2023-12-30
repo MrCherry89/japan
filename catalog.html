@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/slick-theme.css" />
     <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/nouislider.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -708,94 +709,742 @@
       <div class="wrapper">
         <ul class="breadcrumbs-menu">
           <li><a href="index.html">Главная</a></li>
-          <li><span>Контакты</span></li>
+          <li><span>Для женщин</span></li>
         </ul>
       </div>
     </div>
 
-    <div class="contact-wrap">
+    <div class="wrapper">
+      <div class="catalog-info">
+        <div class="text-wrap">
+          <h3>Удобная система подбора лекарств</h3>
+          <p>С нашей системой подбора вы найдете нужный препарат</p>
+          <a href="#" class="white-btn">Японская аптека</a>
+        </div>
+        <div class="images">
+          <img src="img/catalog-img1.png" alt="" />
+          <img src="img/catalog-img2.png" alt="" class="hide-mobile" />
+          <img src="img/catalog-img3.png" alt="" class="hide-mobile" />
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog-wrap">
+      <div class="wrapper">
+        <div class="catalog-title-wrap">
+          <h2 class="main-title">Для женщин</h2>
+          <p>Показано 200 товаров</p>
+          <div class="select-wrap">
+            <select>
+              <option value="1">Сортировать</option>
+              <option value="2">Популярности</option>
+              <option value="3">Сначала дешевле</option>
+              <option value="4">Сначала дороже</option>
+              <option value="5">Скидки</option>
+            </select>
+          </div>
+        </div>
+        <div class="catalog-info-wrapper">
+          <div class="catalog-filters-wrap">
+            <button class="green-btn filter-btn" type="button">Фильтр</button>
+            <div class="catalog-scroll-wrap">
+              <div class="filter-top">
+                <span>Фильтр</span>
+                <button class="close-filters" type="button">
+                  <img src="img/close-black.svg" alt="" />
+                </button>
+              </div>
+              <div class="catalog-item">
+                <button class="head" type="button">
+                  <span class="text">Уход за лицом</span>
+                  <span class="icon"></span>
+                </button>
+                <div class="body">
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Гигиенические помады
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Эссенции
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Скрабы
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Лосьоны
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Маски
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Пилинги
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Молочко
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Маски для лица
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <button class="head" type="button">
+                  <span class="text">Уход за волосами</span>
+                  <span class="icon"></span>
+                </button>
+                <div class="body">
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Гигиенические помады
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Эссенции
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Скрабы
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <button class="head" type="button">
+                  <span class="text">Гигиена</span>
+                  <span class="icon"></span>
+                </button>
+                <div class="body">
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Гигиенические помады
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Эссенции
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Скрабы
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <button class="head" type="button">
+                  <span class="text">Декоративная косметика</span>
+                  <span class="icon"></span>
+                </button>
+                <div class="body">
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Гигиенические помады
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Эссенции
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Скрабы
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <button class="head" type="button">
+                  <span class="text">Уход за руками и ногами</span>
+                  <span class="icon"></span>
+                </button>
+                <div class="body">
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Гигиенические помады
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Эссенции
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Скрабы
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <button class="head" type="button">
+                  <span class="text">Уход за телом</span>
+                  <span class="icon"></span>
+                </button>
+                <div class="body">
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Гигиенические помады
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Эссенции
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Скрабы
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <button class="head" type="button">
+                  <span class="text">Средства от солнца</span>
+                  <span class="icon"></span>
+                </button>
+                <div class="body">
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Гигиенические помады
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Эссенции
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      Скрабы
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog2-item">
+                <b>Цена</b>
+                <div class="inputs">
+                  <input type="text" placeholder="Цена от" />
+                  <input type="text" placeholder="Цена до" />
+                </div>
+                <div id="range-slider-1"></div>
+                <div class="range-numbers">
+                  <input
+                    type="number"
+                    min="0"
+                    max="20000"
+                    step="1"
+                    id="input1-1"
+                  />
+                  <input
+                    type="number"
+                    min="0"
+                    max="20000"
+                    step="1"
+                    id="input1-2"
+                  />
+                </div>
+              </div>
+              <div class="catalog2-item">
+                <b>Бренд</b>
+                <div class="checkbox-wrap">
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                    Kose grace
+                  </label>
+                </div>
+                <div class="checkbox-wrap">
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                    One perfect
+                  </label>
+                </div>
+                <div class="checkbox-wrap">
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                    Gel cream
+                  </label>
+                </div>
+                <div class="checkbox-wrap">
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                    Japan Style
+                  </label>
+                </div>
+                <div class="checkbox-wrap">
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                    And next
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="catalog-info-items">
+              <div class="basket-item">
+                <button class="favorite-icon"></button>
+                <a href="#" class="img-wrap">
+                  <span class="text-style green">НОВИНКА</span>
+                  <img src="img/banner-img6.png" alt="" class="favorite-img" />
+                </a>
+                <div class="text-wrap">
+                  <span class="text">Уход за лицом</span>
+                  <b
+                    >Kose Grace One Perfect Gel Kose Grace One Perfect Gel Cream
+                    UV...</b
+                  >
+                  <div class="rating">
+                    <div class="stars">
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                    </div>
+                    <span>4.9</span>
+                  </div>
+                  <div class="prices">
+                    <span class="new-price">20 000 ₽</span>
+                    <span class="old-price">20 000 ₽</span>
+                  </div>
+                  <button class="green-btn" type="button">В корзину</button>
+                </div>
+              </div>
+              <div class="basket-item">
+                <button class="favorite-icon"></button>
+                <a href="#" class="img-wrap">
+                  <span class="text-style green">НОВИНКА</span>
+                  <img src="img/banner-img6.png" alt="" class="favorite-img" />
+                </a>
+                <div class="text-wrap">
+                  <span class="text">Уход за лицом</span>
+                  <b
+                    >Kose Grace One Perfect Gel Kose Grace One Perfect Gel Cream
+                    UV...</b
+                  >
+                  <div class="rating">
+                    <div class="stars">
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                    </div>
+                    <span>4.9</span>
+                  </div>
+                  <div class="prices">
+                    <span class="new-price">20 000 ₽</span>
+                    <span class="old-price">20 000 ₽</span>
+                  </div>
+                  <button class="green-btn" type="button">В корзину</button>
+                </div>
+              </div>
+              <div class="basket-item">
+                <button class="favorite-icon"></button>
+                <a href="#" class="img-wrap">
+                  <span class="text-style green">НОВИНКА</span>
+                  <img src="img/banner-img6.png" alt="" class="favorite-img" />
+                </a>
+                <div class="text-wrap">
+                  <span class="text">Уход за лицом</span>
+                  <b
+                    >Kose Grace One Perfect Gel Kose Grace One Perfect Gel Cream
+                    UV...</b
+                  >
+                  <div class="rating">
+                    <div class="stars">
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                    </div>
+                    <span>4.9</span>
+                  </div>
+                  <div class="prices">
+                    <span class="new-price">20 000 ₽</span>
+                    <span class="old-price">20 000 ₽</span>
+                  </div>
+                  <button class="green-btn" type="button">В корзину</button>
+                </div>
+              </div>
+              <div class="basket-item">
+                <button class="favorite-icon"></button>
+                <a href="#" class="img-wrap">
+                  <span class="text-style green">НОВИНКА</span>
+                  <img src="img/banner-img6.png" alt="" class="favorite-img" />
+                </a>
+                <div class="text-wrap">
+                  <span class="text">Уход за лицом</span>
+                  <b
+                    >Kose Grace One Perfect Gel Kose Grace One Perfect Gel Cream
+                    UV...</b
+                  >
+                  <div class="rating">
+                    <div class="stars">
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                    </div>
+                    <span>4.9</span>
+                  </div>
+                  <div class="prices">
+                    <span class="new-price">20 000 ₽</span>
+                    <span class="old-price">20 000 ₽</span>
+                  </div>
+                  <button class="green-btn" type="button">В корзину</button>
+                </div>
+              </div>
+              <div class="basket-item">
+                <button class="favorite-icon"></button>
+                <a href="#" class="img-wrap">
+                  <span class="text-style green">НОВИНКА</span>
+                  <img src="img/banner-img6.png" alt="" class="favorite-img" />
+                </a>
+                <div class="text-wrap">
+                  <span class="text">Уход за лицом</span>
+                  <b
+                    >Kose Grace One Perfect Gel Kose Grace One Perfect Gel Cream
+                    UV...</b
+                  >
+                  <div class="rating">
+                    <div class="stars">
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                    </div>
+                    <span>4.9</span>
+                  </div>
+                  <div class="prices">
+                    <span class="new-price">20 000 ₽</span>
+                    <span class="old-price">20 000 ₽</span>
+                  </div>
+                  <button class="green-btn" type="button">В корзину</button>
+                </div>
+              </div>
+              <div class="basket-item">
+                <button class="favorite-icon"></button>
+                <a href="#" class="img-wrap">
+                  <span class="text-style green">НОВИНКА</span>
+                  <img src="img/banner-img6.png" alt="" class="favorite-img" />
+                </a>
+                <div class="text-wrap">
+                  <span class="text">Уход за лицом</span>
+                  <b
+                    >Kose Grace One Perfect Gel Kose Grace One Perfect Gel Cream
+                    UV...</b
+                  >
+                  <div class="rating">
+                    <div class="stars">
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                    </div>
+                    <span>4.9</span>
+                  </div>
+                  <div class="prices">
+                    <span class="new-price">20 000 ₽</span>
+                    <span class="old-price">20 000 ₽</span>
+                  </div>
+                  <button class="green-btn" type="button">В корзину</button>
+                </div>
+              </div>
+              <div class="basket-item">
+                <button class="favorite-icon"></button>
+                <a href="#" class="img-wrap">
+                  <span class="text-style green">НОВИНКА</span>
+                  <img src="img/banner-img6.png" alt="" class="favorite-img" />
+                </a>
+                <div class="text-wrap">
+                  <span class="text">Уход за лицом</span>
+                  <b
+                    >Kose Grace One Perfect Gel Kose Grace One Perfect Gel Cream
+                    UV...</b
+                  >
+                  <div class="rating">
+                    <div class="stars">
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                    </div>
+                    <span>4.9</span>
+                  </div>
+                  <div class="prices">
+                    <span class="new-price">20 000 ₽</span>
+                    <span class="old-price">20 000 ₽</span>
+                  </div>
+                  <button class="green-btn" type="button">В корзину</button>
+                </div>
+              </div>
+              <div class="basket-item">
+                <button class="favorite-icon"></button>
+                <a href="#" class="img-wrap">
+                  <span class="text-style green">НОВИНКА</span>
+                  <img src="img/banner-img6.png" alt="" class="favorite-img" />
+                </a>
+                <div class="text-wrap">
+                  <span class="text">Уход за лицом</span>
+                  <b
+                    >Kose Grace One Perfect Gel Kose Grace One Perfect Gel Cream
+                    UV...</b
+                  >
+                  <div class="rating">
+                    <div class="stars">
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                    </div>
+                    <span>4.9</span>
+                  </div>
+                  <div class="prices">
+                    <span class="new-price">20 000 ₽</span>
+                    <span class="old-price">20 000 ₽</span>
+                  </div>
+                  <button class="green-btn" type="button">В корзину</button>
+                </div>
+              </div>
+              <div class="basket-item">
+                <button class="favorite-icon"></button>
+                <a href="#" class="img-wrap">
+                  <span class="text-style green">НОВИНКА</span>
+                  <img src="img/banner-img6.png" alt="" class="favorite-img" />
+                </a>
+                <div class="text-wrap">
+                  <span class="text">Уход за лицом</span>
+                  <b
+                    >Kose Grace One Perfect Gel Kose Grace One Perfect Gel Cream
+                    UV...</b
+                  >
+                  <div class="rating">
+                    <div class="stars">
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                    </div>
+                    <span>4.9</span>
+                  </div>
+                  <div class="prices">
+                    <span class="new-price">20 000 ₽</span>
+                    <span class="old-price">20 000 ₽</span>
+                  </div>
+                  <button class="green-btn" type="button">В корзину</button>
+                </div>
+              </div>
+              <div class="basket-item">
+                <button class="favorite-icon"></button>
+                <a href="#" class="img-wrap">
+                  <span class="text-style green">НОВИНКА</span>
+                  <img src="img/banner-img6.png" alt="" class="favorite-img" />
+                </a>
+                <div class="text-wrap">
+                  <span class="text">Уход за лицом</span>
+                  <b
+                    >Kose Grace One Perfect Gel Kose Grace One Perfect Gel Cream
+                    UV...</b
+                  >
+                  <div class="rating">
+                    <div class="stars">
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                    </div>
+                    <span>4.9</span>
+                  </div>
+                  <div class="prices">
+                    <span class="new-price">20 000 ₽</span>
+                    <span class="old-price">20 000 ₽</span>
+                  </div>
+                  <button class="green-btn" type="button">В корзину</button>
+                </div>
+              </div>
+              <div class="basket-item">
+                <button class="favorite-icon"></button>
+                <a href="#" class="img-wrap">
+                  <span class="text-style green">НОВИНКА</span>
+                  <img src="img/banner-img6.png" alt="" class="favorite-img" />
+                </a>
+                <div class="text-wrap">
+                  <span class="text">Уход за лицом</span>
+                  <b
+                    >Kose Grace One Perfect Gel Kose Grace One Perfect Gel Cream
+                    UV...</b
+                  >
+                  <div class="rating">
+                    <div class="stars">
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                    </div>
+                    <span>4.9</span>
+                  </div>
+                  <div class="prices">
+                    <span class="new-price">20 000 ₽</span>
+                    <span class="old-price">20 000 ₽</span>
+                  </div>
+                  <button class="green-btn" type="button">В корзину</button>
+                </div>
+              </div>
+              <div class="basket-item">
+                <button class="favorite-icon"></button>
+                <a href="#" class="img-wrap">
+                  <span class="text-style green">НОВИНКА</span>
+                  <img src="img/banner-img6.png" alt="" class="favorite-img" />
+                </a>
+                <div class="text-wrap">
+                  <span class="text">Уход за лицом</span>
+                  <b
+                    >Kose Grace One Perfect Gel Kose Grace One Perfect Gel Cream
+                    UV...</b
+                  >
+                  <div class="rating">
+                    <div class="stars">
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                      <img src="img/star.svg" alt="" />
+                    </div>
+                    <span>4.9</span>
+                  </div>
+                  <div class="prices">
+                    <span class="new-price">20 000 ₽</span>
+                    <span class="old-price">20 000 ₽</span>
+                  </div>
+                  <button class="green-btn" type="button">В корзину</button>
+                </div>
+              </div>
+            </div>
+            <div class="pagination-wrap">
+              <button class="prev hide" type="button">
+                <img src="img/angle-down.svg" alt="" />
+              </button>
+              <div class="pages">
+                <button type="button" class="active">1</button>
+                <button type="button">2</button>
+                <button type="button">3</button>
+                <button type="button">4</button>
+                <button type="button">5</button>
+              </div>
+              <button class="next" type="button">
+                <img src="img/angle-down.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="go-to-catalog">
       <div class="wrapper">
         <div class="info">
-          <h2 class="main-title">Контакты</h2>
-          <ul class="tab-menu">
-            <li><button type="button">Россия</button></li>
-            <li class="active"><button type="button">Казахстан</button></li>
-          </ul>
-          <div class="tab-content">
-            <div class="tab-content-item">
-              <div class="contact-info-wrap">
-                <div class="contact-info">
-                  <div class="img-wrap">
-                    <img src="img/contacts-icon1.svg" alt="" />
-                  </div>
-                  <div class="texts">
-                    <b>Наш адрес</b>
-                    <span
-                      >г. Алматы, ул. Гоголя, д. 120 /ул. Досмухамедова, д.
-                      20</span
-                    >
-                  </div>
-                </div>
-                <div class="contact-info">
-                  <div class="img-wrap">
-                    <img src="img/contacts-icon2.svg" alt="" />
-                  </div>
-                  <div class="texts">
-                    <b>Телефоны</b>
-                    <span>+7 (727) 279-00-82</span>
-                    <span>+7 (727) 329-21-62</span>
-                    <span>+7 (701) 232-41-17 (WA)</span>
-                  </div>
-                </div>
-                <div class="contact-info">
-                  <div class="img-wrap">
-                    <img src="img/contacts-icon3.svg" alt="" />
-                  </div>
-                  <div class="texts">
-                    <b>Почта</b>
-                    <span>adam.tetyankuev@gmail.com</span>
-                  </div>
-                </div>
-              </div>
-              <div id="map"></div>
-            </div>
-            <div class="tab-content-item active">
-              <div class="contact-info-wrap">
-                <div class="contact-info">
-                  <div class="img-wrap">
-                    <img src="img/contacts-icon1.svg" alt="" />
-                  </div>
-                  <div class="texts">
-                    <b>Наш адрес 2</b>
-                    <span
-                      >г. Алматы, ул. Гоголя, д. 120 /ул. Досмухамедова, д.
-                      20</span
-                    >
-                  </div>
-                </div>
-                <div class="contact-info">
-                  <div class="img-wrap">
-                    <img src="img/contacts-icon2.svg" alt="" />
-                  </div>
-                  <div class="texts">
-                    <b>Телефоны</b>
-                    <span>+7 (727) 279-00-82</span>
-                    <span>+7 (727) 329-21-62</span>
-                    <span>+7 (701) 232-41-17 (WA)</span>
-                  </div>
-                </div>
-                <div class="contact-info">
-                  <div class="img-wrap">
-                    <img src="img/contacts-icon3.svg" alt="" />
-                  </div>
-                  <div class="texts">
-                    <b>Почта</b>
-                    <span>adam.tetyankuev@gmail.com</span>
-                  </div>
-                </div>
-              </div>
-              <div id="map2"></div>
-            </div>
+          <div class="text-wrap">
+            <h2>JapanStyle японские товары!</h2>
+            <p>
+              Компания Japan Style, уже 10-й год, занимается поставками товаров
+              в широком ассортименте, напрямую из Японии оптом и в розницу.
+              Основная наша задача – это поиск необходимых заказчикам товаров,
+              их приобретение и дальнейшая поставка. Всё, что от Вас требуется –
+              оставить заявку, указав в ней список необходимых Вам товаров,
+              прямо у нас на сайте или связаться с нашими менеджерами в г.
+              Алматы.
+            </p>
+            <a href="#" class="white-btn">Перейти в каталог</a>
+          </div>
+          <div class="img-wrap">
+            <img src="img/go-catalog-img.png" alt="" />
           </div>
         </div>
       </div>
@@ -906,156 +1555,39 @@
     <script src="js/select2.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/jquery.smooth-scroll.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
     <script src="js/script.js"></script>
 
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-
     <script>
-      let center2 = [55.707076, 37.385825];
-      let center3 = [55.847076, 37.485825];
-      let center4 = [55.687076, 36.885825];
+      // RangeSlider 1 - start
+      var rangeSlider_1 = document.getElementById("range-slider-1");
+      var input1_1 = document.getElementById("input1-1");
+      var input1_2 = document.getElementById("input1-2");
+      var inputs_1 = [input1_1, input1_2];
 
-      function init() {
-        let map = new ymaps.Map("map2", {
-          center: center2,
-          zoom: 9,
-          controls: [],
+      noUiSlider.create(rangeSlider_1, {
+        start: [7000, 14000],
+        connect: true,
+        range: {
+          min: 0,
+          max: 20000,
+        },
+        format: {
+          to: (v) => v | 0,
+          from: (v) => v | 0,
+        },
+      });
+
+      rangeSlider_1.noUiSlider.on("update", function (values, handle) {
+        inputs_1[handle].value = values[handle];
+      });
+
+      inputs_1.forEach(function (input, handle) {
+        input.addEventListener("change", function () {
+          rangeSlider_1.noUiSlider.setHandle(handle, this.value);
         });
-
-        let placemark2 = new ymaps.Placemark(
-          center2,
-          {
-            balloonContent: `
-            
-    <div class="balloon-wrap">
-      <div class="img-wrap">
-        <img src="img/balloon-img.jpg" alt="" />
-      </div>
-      <div class="bottom-wrap">
-      <span class="address"
-        >Адрес г. Алматы ул. Макатаева 129в, Алматы 050000</span
-      >
-    </div>
-    </div>
-            
-            `,
-          },
-          {
-            iconLayout: "default#image",
-            iconImageHref: "",
-            iconImageOffset: [0, 0],
-            iconImageSize: [100, 34],
-            hideIconOnBalloonOpen: false,
-          }
-        );
-
-        map.geoObjects.add(placemark2);
-        map.behaviors.disable("scrollZoom");
-      }
-      ymaps.ready(init);
-    </script>
-
-    <script>
-      let center5 = [55.707076, 37.385825];
-      let center6 = [55.847076, 37.485825];
-      let center7 = [55.687076, 36.885825];
-
-      function init() {
-        let map = new ymaps.Map("map", {
-          center: center5,
-          zoom: 9,
-          controls: [],
-        });
-
-        let placemark2 = new ymaps.Placemark(
-          center5,
-          {
-            balloonContent: `
-        
-        <div class="balloon-wrap2">
-      <div class="img-wrap">
-        <img src="img/ballon-img2.png" alt="" />
-      </div>
-      <div class="text-wrap">
-        <b>Название ЖК</b>
-        <span>пр. Аль Фараби (бывшая ул. 38) ..</span>
-        <img src="img/small-logo.png" alt="" />
-      </div>
-    </div>
-        
-        `,
-          },
-          {
-            iconLayout: "default#image",
-            iconImageHref: "",
-            iconImageOffset: [0, 0],
-            iconImageSize: [100, 34],
-            hideIconOnBalloonOpen: false,
-          }
-        );
-
-        let placemark3 = new ymaps.Placemark(
-          center6,
-          {
-            balloonContent: `
-
-        <div class="balloon-wrap2">
-      <div class="img-wrap">
-        <img src="img/ballon-img2.png" alt="" />
-      </div>
-      <div class="text-wrap">
-        <b>Название ЖК 2</b>
-        <span>пр. Аль Фараби (бывшая ул. 38) ..</span>
-        <img src="img/small-logo.png" alt="" />
-      </div>
-    </div>
-
-            `,
-          },
-          {
-            iconLayout: "default#image",
-            iconImageHref: "",
-            iconImageOffset: [0, 0],
-            iconImageSize: [100, 34],
-            hideIconOnBalloonOpen: false,
-          }
-        );
-
-        let placemark4 = new ymaps.Placemark(
-          center7,
-          {
-            balloonContent: `
-
-        <div class="balloon-wrap2">
-      <div class="img-wrap">
-        <img src="img/ballon-img2.png" alt="" />
-      </div>
-      <div class="text-wrap">
-        <b>Название ЖК 3</b>
-        <span>пр. Аль Фараби (бывшая ул. 38) ..</span>
-        <img src="img/small-logo.png" alt="" />
-      </div>
-    </div>
-
-            `,
-          },
-          {
-            iconLayout: "default#image",
-            iconImageHref: "",
-            iconImageOffset: [0, 0],
-            iconImageSize: [100, 34],
-            hideIconOnBalloonOpen: false,
-          }
-        );
-
-        map.geoObjects.add(placemark2);
-        map.geoObjects.add(placemark3);
-        map.geoObjects.add(placemark4);
-        map.behaviors.disable("scrollZoom");
-
-        // placemark.balloon.open();
-      }
-      ymaps.ready(init);
+      });
+      // RangeSlider 1 - end
     </script>
   </body>
 </html>

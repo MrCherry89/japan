@@ -708,93 +708,473 @@
       <div class="wrapper">
         <ul class="breadcrumbs-menu">
           <li><a href="index.html">Главная</a></li>
-          <li><span>Контакты</span></li>
+          <li><span>Проверка заказа</span></li>
         </ul>
       </div>
     </div>
 
-    <div class="contact-wrap">
+    <div class="steps-wrap">
       <div class="wrapper">
-        <div class="info">
-          <h2 class="main-title">Контакты</h2>
-          <ul class="tab-menu">
-            <li><button type="button">Россия</button></li>
-            <li class="active"><button type="button">Казахстан</button></li>
-          </ul>
-          <div class="tab-content">
-            <div class="tab-content-item">
-              <div class="contact-info-wrap">
-                <div class="contact-info">
+        <div class="step-menu-wrapper">
+          <div class="scroll">
+            <a href="#" class="step-link">
+              <span class="number">1</span>
+              <span class="text">Корзина</span>
+            </a>
+            <a href="#" class="step-link">
+              <span class="number">2</span>
+              <span class="text">Оформление заказа</span>
+            </a>
+            <a href="#" class="step-link">
+              <span class="number">3</span>
+              <span class="text">Способ доставки</span>
+            </a>
+            <a href="#" class="step-link active">
+              <span class="number">4</span>
+              <span class="text">Проверка</span>
+            </a>
+          </div>
+        </div>
+        <div class="title-wrap">
+          <h2 class="main-title">Проверка заказа</h2>
+          <p>Здесь ваши товары которые вам понравились</p>
+        </div>
+        <div class="main-info">
+          <div class="left">
+            <div class="add-block">
+              <div class="title-wrap">
+                <h4>Доставить в...</h4>
+                <p>Проверьте все данные</p>
+              </div>
+              <div class="details-info">
+                <div class="top">
                   <div class="img-wrap">
-                    <img src="img/contacts-icon1.svg" alt="" />
+                    <img src="img/details-img.png" alt="" />
                   </div>
-                  <div class="texts">
-                    <b>Наш адрес</b>
-                    <span
-                      >г. Алматы, ул. Гоголя, д. 120 /ул. Досмухамедова, д.
-                      20</span
-                    >
+                  <div class="text-wrap">
+                    <div class="name-wrap">
+                      <span class="name">Василий А.</span>
+                      <a href="tel:+77000000000"
+                        ><img src="img/contacts-icon2.svg" alt="" /> +7 700 000
+                        00 00</a
+                      >
+                    </div>
+                    <span class="address">
+                      <img src="img/contacts-icon1.svg" alt="" />
+                      Адрес не дом и не улица адрес советский
+                    </span>
                   </div>
+                  <a href="#" class="edit-button">
+                    <img src="img/edit.svg" alt="" /> Править
+                  </a>
                 </div>
-                <div class="contact-info">
+                <div class="bottom">
+                  <div class="info-texts">
+                    <b>DHL Express</b>
+                    <span>Дата доставки: 11 авг - 13 июля</span>
+                  </div>
+                  <div class="free">
+                    <img src="img/dollar.svg" alt="" />
+                    <span>Бесплатно</span>
+                  </div>
                   <div class="img-wrap">
-                    <img src="img/contacts-icon2.svg" alt="" />
-                  </div>
-                  <div class="texts">
-                    <b>Телефоны</b>
-                    <span>+7 (727) 279-00-82</span>
-                    <span>+7 (727) 329-21-62</span>
-                    <span>+7 (701) 232-41-17 (WA)</span>
-                  </div>
-                </div>
-                <div class="contact-info">
-                  <div class="img-wrap">
-                    <img src="img/contacts-icon3.svg" alt="" />
-                  </div>
-                  <div class="texts">
-                    <b>Почта</b>
-                    <span>adam.tetyankuev@gmail.com</span>
+                    <img src="img/brand-img1.svg" alt="" />
                   </div>
                 </div>
               </div>
-              <div id="map"></div>
             </div>
-            <div class="tab-content-item active">
-              <div class="contact-info-wrap">
-                <div class="contact-info">
+            <div class="main-info-item-wrap">
+              <div class="main-info-item">
+                <div class="product-info">
                   <div class="img-wrap">
-                    <img src="img/contacts-icon1.svg" alt="" />
+                    <img src="img/order-small-img.png" alt="" />
                   </div>
                   <div class="texts">
-                    <b>Наш адрес 2</b>
-                    <span
-                      >г. Алматы, ул. Гоголя, д. 120 /ул. Досмухамедова, д.
-                      20</span
-                    >
+                    <b>Бальзам для губ Metha...</b>
+                    <div class="text-info">
+                      <p>Артикул: 541842</p>
+                      <span>-50%</span>
+                    </div>
+                  </div>
+                  <div class="prices">
+                    <span class="old-price">320 000 ₽</span>
+                    <span class="new-price">1 108 000 ₽</span>
                   </div>
                 </div>
-                <div class="contact-info">
-                  <div class="img-wrap">
-                    <img src="img/contacts-icon2.svg" alt="" />
+                <div class="product-buttons">
+                  <div class="product-count">
+                    <button type="button" class="btn-minus">
+                      <img src="img/minus.svg" alt="" />
+                    </button>
+                    <input type="text" class="input-number" value="1" min="1" />
+                    <button type="button" class="btn-plus">
+                      <img src="img/plus.svg" alt="" />
+                    </button>
                   </div>
-                  <div class="texts">
-                    <b>Телефоны</b>
-                    <span>+7 (727) 279-00-82</span>
-                    <span>+7 (727) 329-21-62</span>
-                    <span>+7 (701) 232-41-17 (WA)</span>
-                  </div>
-                </div>
-                <div class="contact-info">
-                  <div class="img-wrap">
-                    <img src="img/contacts-icon3.svg" alt="" />
-                  </div>
-                  <div class="texts">
-                    <b>Почта</b>
-                    <span>adam.tetyankuev@gmail.com</span>
-                  </div>
+                  <button class="remove" type="button">
+                    <img src="img/remove-icon.svg" alt="" />
+                  </button>
                 </div>
               </div>
-              <div id="map2"></div>
+              <div class="main-info-item">
+                <div class="product-info">
+                  <div class="img-wrap">
+                    <img src="img/order-small-img.png" alt="" />
+                  </div>
+                  <div class="texts">
+                    <b>Бальзам для губ Metha...</b>
+                    <div class="text-info">
+                      <p>Артикул: 541842</p>
+                      <span>-50%</span>
+                    </div>
+                  </div>
+                  <div class="prices">
+                    <span class="old-price">320 000 ₽</span>
+                    <span class="new-price">1 108 000 ₽</span>
+                  </div>
+                </div>
+                <div class="product-buttons">
+                  <div class="product-count">
+                    <button type="button" class="btn-minus">
+                      <img src="img/minus.svg" alt="" />
+                    </button>
+                    <input type="text" class="input-number" value="1" min="1" />
+                    <button type="button" class="btn-plus">
+                      <img src="img/plus.svg" alt="" />
+                    </button>
+                  </div>
+                  <button class="remove" type="button">
+                    <img src="img/remove-icon.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="main-info-item">
+                <div class="product-info">
+                  <div class="img-wrap">
+                    <img src="img/order-small-img.png" alt="" />
+                  </div>
+                  <div class="texts">
+                    <b>Бальзам для губ Metha...</b>
+                    <div class="text-info">
+                      <p>Артикул: 541842</p>
+                      <span>-50%</span>
+                    </div>
+                  </div>
+                  <div class="prices">
+                    <span class="old-price">320 000 ₽</span>
+                    <span class="new-price">1 108 000 ₽</span>
+                  </div>
+                </div>
+                <div class="product-buttons">
+                  <div class="product-count">
+                    <button type="button" class="btn-minus">
+                      <img src="img/minus.svg" alt="" />
+                    </button>
+                    <input type="text" class="input-number" value="1" min="1" />
+                    <button type="button" class="btn-plus">
+                      <img src="img/plus.svg" alt="" />
+                    </button>
+                  </div>
+                  <button class="remove" type="button">
+                    <img src="img/remove-icon.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="main-info-item">
+                <div class="product-info">
+                  <div class="img-wrap">
+                    <img src="img/order-small-img.png" alt="" />
+                  </div>
+                  <div class="texts">
+                    <b>Бальзам для губ Metha...</b>
+                    <div class="text-info">
+                      <p>Артикул: 541842</p>
+                      <span>-50%</span>
+                    </div>
+                  </div>
+                  <div class="prices">
+                    <span class="old-price">320 000 ₽</span>
+                    <span class="new-price">1 108 000 ₽</span>
+                  </div>
+                </div>
+                <div class="product-buttons">
+                  <div class="product-count">
+                    <button type="button" class="btn-minus">
+                      <img src="img/minus.svg" alt="" />
+                    </button>
+                    <input type="text" class="input-number" value="1" min="1" />
+                    <button type="button" class="btn-plus">
+                      <img src="img/plus.svg" alt="" />
+                    </button>
+                  </div>
+                  <button class="remove" type="button">
+                    <img src="img/remove-icon.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="main-info-item">
+                <div class="product-info">
+                  <div class="img-wrap">
+                    <img src="img/order-small-img.png" alt="" />
+                  </div>
+                  <div class="texts">
+                    <b>Бальзам для губ Metha...</b>
+                    <div class="text-info">
+                      <p>Артикул: 541842</p>
+                      <span>-50%</span>
+                    </div>
+                  </div>
+                  <div class="prices">
+                    <span class="old-price">320 000 ₽</span>
+                    <span class="new-price">1 108 000 ₽</span>
+                  </div>
+                </div>
+                <div class="product-buttons">
+                  <div class="product-count">
+                    <button type="button" class="btn-minus">
+                      <img src="img/minus.svg" alt="" />
+                    </button>
+                    <input type="text" class="input-number" value="1" min="1" />
+                    <button type="button" class="btn-plus">
+                      <img src="img/plus.svg" alt="" />
+                    </button>
+                  </div>
+                  <button class="remove" type="button">
+                    <img src="img/remove-icon.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="main-info-item">
+                <div class="product-info">
+                  <div class="img-wrap">
+                    <img src="img/order-small-img.png" alt="" />
+                  </div>
+                  <div class="texts">
+                    <b>Бальзам для губ Metha...</b>
+                    <div class="text-info">
+                      <p>Артикул: 541842</p>
+                      <span>-50%</span>
+                    </div>
+                  </div>
+                  <div class="prices">
+                    <span class="old-price">320 000 ₽</span>
+                    <span class="new-price">1 108 000 ₽</span>
+                  </div>
+                </div>
+                <div class="product-buttons">
+                  <div class="product-count">
+                    <button type="button" class="btn-minus">
+                      <img src="img/minus.svg" alt="" />
+                    </button>
+                    <input type="text" class="input-number" value="1" min="1" />
+                    <button type="button" class="btn-plus">
+                      <img src="img/plus.svg" alt="" />
+                    </button>
+                  </div>
+                  <button class="remove" type="button">
+                    <img src="img/remove-icon.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="main-info-item">
+                <div class="product-info">
+                  <div class="img-wrap">
+                    <img src="img/order-small-img.png" alt="" />
+                  </div>
+                  <div class="texts">
+                    <b>Бальзам для губ Metha...</b>
+                    <div class="text-info">
+                      <p>Артикул: 541842</p>
+                      <span>-50%</span>
+                    </div>
+                  </div>
+                  <div class="prices">
+                    <span class="old-price">320 000 ₽</span>
+                    <span class="new-price">1 108 000 ₽</span>
+                  </div>
+                </div>
+                <div class="product-buttons">
+                  <div class="product-count">
+                    <button type="button" class="btn-minus">
+                      <img src="img/minus.svg" alt="" />
+                    </button>
+                    <input type="text" class="input-number" value="1" min="1" />
+                    <button type="button" class="btn-plus">
+                      <img src="img/plus.svg" alt="" />
+                    </button>
+                  </div>
+                  <button class="remove" type="button">
+                    <img src="img/remove-icon.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="order-price">
+              <h4>Сумма заказа</h4>
+              <ul class="price-list">
+                <li>
+                  <span class="grey">Итог</span>
+                  <span class="text">318 000 ₽</span>
+                </li>
+                <li>
+                  <span class="grey">Доставка</span>
+                  <span class="text">-</span>
+                </li>
+                <li>
+                  <span class="grey">НДС</span>
+                  <span class="text">318 000 ₽</span>
+                </li>
+                <li>
+                  <span class="grey">Скидка 10%</span>
+                  <span class="red">-118 000 ₽</span>
+                </li>
+              </ul>
+              <div class="applied">
+                <span>JAPANSTYLE50</span>
+                <button type="button" class="green-btn" disabled>
+                  Применён
+                </button>
+              </div>
+              <div class="textarea-wrap">
+                <span>Напишите пожелание</span>
+                <textarea placeholder="Комментарий"></textarea>
+              </div>
+              <div class="itog-info">
+                <b>Итог</b>
+                <b>318 000 ₽</b>
+              </div>
+            </div>
+            <a href="#" class="green-btn"
+              ><img src="img/checkout.svg" alt="" /> Оформить заказ</a
+            >
+            <a href="#" class="grey-button"
+              ><img src="img/back-arrow.svg" alt="" /> Предыдущий шаг</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="favorite-wrap mb0">
+      <div class="wrapper">
+        <h2 class="main-title">С этим товаром покупают</h2>
+        <div class="favorites-items">
+          <div class="basket-item">
+            <button class="favorite-icon active"></button>
+            <a href="#" class="img-wrap">
+              <span class="text-style pink">НОВИНКА</span>
+              <img src="img/banner-img6.png" alt="" class="favorite-img" />
+            </a>
+            <div class="text-wrap">
+              <span class="text">Уход за лицом</span>
+              <b
+                >Kose Grace One Perfect Gel Kose Grace One Perfect Gel Cream
+                UV...</b
+              >
+              <div class="rating">
+                <div class="stars">
+                  <img src="img/star.svg" alt="" />
+                  <img src="img/star.svg" alt="" />
+                  <img src="img/star.svg" alt="" />
+                  <img src="img/star.svg" alt="" />
+                  <img src="img/star.svg" alt="" />
+                </div>
+                <span>4.9</span>
+              </div>
+              <div class="prices">
+                <span class="new-price">20 000 ₽</span>
+                <span class="old-price">20 000 ₽</span>
+              </div>
+              <button class="green-btn" type="button">В корзину</button>
+            </div>
+          </div>
+          <div class="basket-item">
+            <button class="favorite-icon active"></button>
+            <a href="#" class="img-wrap">
+              <span class="text-style pink">НОВИНКА</span>
+              <img src="img/banner-img6.png" alt="" class="favorite-img" />
+            </a>
+            <div class="text-wrap">
+              <span class="text">Уход за лицом</span>
+              <b
+                >Kose Grace One Perfect Gel Kose Grace One Perfect Gel Cream
+                UV...</b
+              >
+              <div class="rating">
+                <div class="stars">
+                  <img src="img/star.svg" alt="" />
+                  <img src="img/star.svg" alt="" />
+                  <img src="img/star.svg" alt="" />
+                  <img src="img/star.svg" alt="" />
+                  <img src="img/star.svg" alt="" />
+                </div>
+                <span>4.9</span>
+              </div>
+              <div class="prices">
+                <span class="new-price">20 000 ₽</span>
+                <span class="old-price">20 000 ₽</span>
+              </div>
+              <button class="green-btn" type="button">В корзину</button>
+            </div>
+          </div>
+          <div class="basket-item">
+            <button class="favorite-icon active"></button>
+            <a href="#" class="img-wrap">
+              <span class="text-style pink">НОВИНКА</span>
+              <img src="img/banner-img6.png" alt="" class="favorite-img" />
+            </a>
+            <div class="text-wrap">
+              <span class="text">Уход за лицом</span>
+              <b
+                >Kose Grace One Perfect Gel Kose Grace One Perfect Gel Cream
+                UV...</b
+              >
+              <div class="rating">
+                <div class="stars">
+                  <img src="img/star.svg" alt="" />
+                  <img src="img/star.svg" alt="" />
+                  <img src="img/star.svg" alt="" />
+                  <img src="img/star.svg" alt="" />
+                  <img src="img/star.svg" alt="" />
+                </div>
+                <span>4.9</span>
+              </div>
+              <div class="prices">
+                <span class="new-price">20 000 ₽</span>
+                <span class="old-price">20 000 ₽</span>
+              </div>
+              <button class="green-btn" type="button">В корзину</button>
+            </div>
+          </div>
+          <div class="basket-item">
+            <button class="favorite-icon active"></button>
+            <a href="#" class="img-wrap">
+              <span class="text-style pink">НОВИНКА</span>
+              <img src="img/banner-img6.png" alt="" class="favorite-img" />
+            </a>
+            <div class="text-wrap">
+              <span class="text">Уход за лицом</span>
+              <b
+                >Kose Grace One Perfect Gel Kose Grace One Perfect Gel Cream
+                UV...</b
+              >
+              <div class="rating">
+                <div class="stars">
+                  <img src="img/star.svg" alt="" />
+                  <img src="img/star.svg" alt="" />
+                  <img src="img/star.svg" alt="" />
+                  <img src="img/star.svg" alt="" />
+                  <img src="img/star.svg" alt="" />
+                </div>
+                <span>4.9</span>
+              </div>
+              <div class="prices">
+                <span class="new-price">20 000 ₽</span>
+                <span class="old-price">20 000 ₽</span>
+              </div>
+              <button class="green-btn" type="button">В корзину</button>
             </div>
           </div>
         </div>
@@ -907,155 +1287,5 @@
     <script src="js/aos.js"></script>
     <script src="js/jquery.smooth-scroll.min.js"></script>
     <script src="js/script.js"></script>
-
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-
-    <script>
-      let center2 = [55.707076, 37.385825];
-      let center3 = [55.847076, 37.485825];
-      let center4 = [55.687076, 36.885825];
-
-      function init() {
-        let map = new ymaps.Map("map2", {
-          center: center2,
-          zoom: 9,
-          controls: [],
-        });
-
-        let placemark2 = new ymaps.Placemark(
-          center2,
-          {
-            balloonContent: `
-            
-    <div class="balloon-wrap">
-      <div class="img-wrap">
-        <img src="img/balloon-img.jpg" alt="" />
-      </div>
-      <div class="bottom-wrap">
-      <span class="address"
-        >Адрес г. Алматы ул. Макатаева 129в, Алматы 050000</span
-      >
-    </div>
-    </div>
-            
-            `,
-          },
-          {
-            iconLayout: "default#image",
-            iconImageHref: "",
-            iconImageOffset: [0, 0],
-            iconImageSize: [100, 34],
-            hideIconOnBalloonOpen: false,
-          }
-        );
-
-        map.geoObjects.add(placemark2);
-        map.behaviors.disable("scrollZoom");
-      }
-      ymaps.ready(init);
-    </script>
-
-    <script>
-      let center5 = [55.707076, 37.385825];
-      let center6 = [55.847076, 37.485825];
-      let center7 = [55.687076, 36.885825];
-
-      function init() {
-        let map = new ymaps.Map("map", {
-          center: center5,
-          zoom: 9,
-          controls: [],
-        });
-
-        let placemark2 = new ymaps.Placemark(
-          center5,
-          {
-            balloonContent: `
-        
-        <div class="balloon-wrap2">
-      <div class="img-wrap">
-        <img src="img/ballon-img2.png" alt="" />
-      </div>
-      <div class="text-wrap">
-        <b>Название ЖК</b>
-        <span>пр. Аль Фараби (бывшая ул. 38) ..</span>
-        <img src="img/small-logo.png" alt="" />
-      </div>
-    </div>
-        
-        `,
-          },
-          {
-            iconLayout: "default#image",
-            iconImageHref: "",
-            iconImageOffset: [0, 0],
-            iconImageSize: [100, 34],
-            hideIconOnBalloonOpen: false,
-          }
-        );
-
-        let placemark3 = new ymaps.Placemark(
-          center6,
-          {
-            balloonContent: `
-
-        <div class="balloon-wrap2">
-      <div class="img-wrap">
-        <img src="img/ballon-img2.png" alt="" />
-      </div>
-      <div class="text-wrap">
-        <b>Название ЖК 2</b>
-        <span>пр. Аль Фараби (бывшая ул. 38) ..</span>
-        <img src="img/small-logo.png" alt="" />
-      </div>
-    </div>
-
-            `,
-          },
-          {
-            iconLayout: "default#image",
-            iconImageHref: "",
-            iconImageOffset: [0, 0],
-            iconImageSize: [100, 34],
-            hideIconOnBalloonOpen: false,
-          }
-        );
-
-        let placemark4 = new ymaps.Placemark(
-          center7,
-          {
-            balloonContent: `
-
-        <div class="balloon-wrap2">
-      <div class="img-wrap">
-        <img src="img/ballon-img2.png" alt="" />
-      </div>
-      <div class="text-wrap">
-        <b>Название ЖК 3</b>
-        <span>пр. Аль Фараби (бывшая ул. 38) ..</span>
-        <img src="img/small-logo.png" alt="" />
-      </div>
-    </div>
-
-            `,
-          },
-          {
-            iconLayout: "default#image",
-            iconImageHref: "",
-            iconImageOffset: [0, 0],
-            iconImageSize: [100, 34],
-            hideIconOnBalloonOpen: false,
-          }
-        );
-
-        map.geoObjects.add(placemark2);
-        map.geoObjects.add(placemark3);
-        map.geoObjects.add(placemark4);
-        map.behaviors.disable("scrollZoom");
-
-        // placemark.balloon.open();
-      }
-      ymaps.ready(init);
-    </script>
   </body>
 </html>

@@ -708,93 +708,146 @@
       <div class="wrapper">
         <ul class="breadcrumbs-menu">
           <li><a href="index.html">Главная</a></li>
-          <li><span>Контакты</span></li>
+          <li><span>Мои данные</span></li>
         </ul>
       </div>
     </div>
 
-    <div class="contact-wrap">
+    <div class="personal-area-wrap">
       <div class="wrapper">
-        <div class="info">
-          <h2 class="main-title">Контакты</h2>
-          <ul class="tab-menu">
-            <li><button type="button">Россия</button></li>
-            <li class="active"><button type="button">Казахстан</button></li>
-          </ul>
-          <div class="tab-content">
-            <div class="tab-content-item">
-              <div class="contact-info-wrap">
-                <div class="contact-info">
-                  <div class="img-wrap">
-                    <img src="img/contacts-icon1.svg" alt="" />
+        <h2 class="main-title">Мои данные</h2>
+        <div class="personal-area-info">
+          <div class="left-info">
+            <div class="details">
+              <div class="top">
+                <div class="img-wrap">
+                  <img src="img/details-img.png" alt="" />
+                </div>
+                <div class="text-wrap">
+                  <div class="name-wrap">
+                    <span class="name">Василий Аникиенко</span>
+                    <span class="style">Оптовик</span>
                   </div>
-                  <div class="texts">
-                    <b>Наш адрес</b>
-                    <span
-                      >г. Алматы, ул. Гоголя, д. 120 /ул. Досмухамедова, д.
-                      20</span
+                  <div class="links">
+                    <a href="tel:+77000000000"
+                      ><img src="img/contacts-icon2.svg" alt="" /> +7 700 000 00
+                      00</a
+                    >
+                    <a href="mailto:adam.tetyankuev@gmail.com"
+                      ><img src="img/contacts-icon3.svg" alt="" />
+                      adam.tetyankuev@gmail.com</a
                     >
                   </div>
                 </div>
-                <div class="contact-info">
-                  <div class="img-wrap">
-                    <img src="img/contacts-icon2.svg" alt="" />
-                  </div>
-                  <div class="texts">
-                    <b>Телефоны</b>
-                    <span>+7 (727) 279-00-82</span>
-                    <span>+7 (727) 329-21-62</span>
-                    <span>+7 (701) 232-41-17 (WA)</span>
-                  </div>
-                </div>
-                <div class="contact-info">
-                  <div class="img-wrap">
-                    <img src="img/contacts-icon3.svg" alt="" />
-                  </div>
-                  <div class="texts">
-                    <b>Почта</b>
-                    <span>adam.tetyankuev@gmail.com</span>
+                <a href="#" class="edit-button">
+                  <img src="img/edit.svg" alt="" /> Править
+                </a>
+              </div>
+              <div class="your-addresses">
+                <b>Ваши адреса</b>
+                <span
+                  >Россия, Москва, Звездный Бульвар д. 578, корп 1, кв 77</span
+                >
+                <a href="#">Добавить адрес</a>
+              </div>
+              <div class="social-wrap">
+                <h4>Социальные сети</h4>
+                <p>
+                  Подключите ваши социальные сети для упрощенного входа на сайт
+                </p>
+                <ul class="social-menu">
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="your-feedback">
+                <b>Ваши отзывы под товарами</b>
+                <div class="review-item">
+                  <a href="#" class="top-info">
+                    <div class="info-name">
+                      <span class="icon-wrap">
+                        <img src="img/review-icon.png" alt="" />
+                      </span>
+                      <div class="texts">
+                        <b class="name">Валерия А.</b>
+                        <span class="date">Май, 23 2020</span>
+                      </div>
+                    </div>
+                    <div class="rating-info">
+                      <div class="stars">
+                        <img src="img/star.svg" alt="" />
+                        <img src="img/star.svg" alt="" />
+                        <img src="img/star.svg" alt="" />
+                        <img src="img/star.svg" alt="" />
+                        <img src="img/star.svg" alt="" />
+                      </div>
+                      <span>83% отзывов совпадают с этим</span>
+                    </div>
+                  </a>
+                  <span
+                    >Вода, BG, этилгексилметоксициннамат, этанол, PG дикапрат,
+                    полисиликон-15, изотридецил изононаноат, гексил диэтил
+                    аминогидроксибензоил бензоат
+                  </span>
+                  <div class="like-wrap">
+                    <button class="like active">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M6.23396 1.15229C5.99472 2.93144 5.39838 4.50298 4.44302 5.87254C4.74133 6.24801 4.91953 6.7232 4.91953 7.24001V14.28C4.91953 14.6198 4.84251 14.9416 4.70498 15.2288C5.19494 15.4508 5.74576 15.5695 6.35358 15.5838C8.73459 15.6041 10.4925 15.6041 11.6354 15.5839C13.4131 15.5523 14.1537 15.0302 14.5784 13.647C14.9939 12.2934 15.4105 8.61861 15.2757 6.78908C15.1991 5.75021 14.7561 5.20797 13.9213 5.15632C13.6131 5.13725 13.2626 5.18227 12.7742 5.28867C12.5951 5.32767 12.0513 5.46 11.693 5.5472C11.5389 5.58468 11.4192 5.61383 11.3774 5.62364C11.0623 5.69757 10.7779 5.75913 10.4943 5.81343C9.59576 5.98553 9.21584 5.91942 9.0988 5.72579C8.97704 5.52435 8.9708 5.225 9.04939 4.12804C9.08457 3.63693 9.10109 3.31583 9.10409 2.95457C9.11955 1.09348 8.18417 0.277294 6.53892 0.79092C6.37568 0.841881 6.25675 0.982807 6.23396 1.15229ZM0.519531 7.24001C0.519531 6.511 1.11052 5.92001 1.83953 5.92001H2.71953C3.44855 5.92001 4.03953 6.511 4.03953 7.24001V14.28C4.03953 15.009 3.44855 15.6 2.71953 15.6H1.83953C1.11052 15.6 0.519531 15.009 0.519531 14.28V7.24001Z"
+                        />
+                      </svg>
+                    </button>
+                    <button class="dislike">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M0.400391 8.88002C0.400391 9.60904 0.991375 10.2 1.72039 10.2H2.60039C3.32941 10.2 3.92039 9.60904 3.92039 8.88002V1.84002C3.92039 1.111 3.32941 0.52002 2.60039 0.52002H1.72039C0.991375 0.52002 0.400391 1.111 0.400391 1.84002V8.88002ZM4.80039 8.88002C4.80039 9.39683 4.62219 9.87202 4.32387 10.2475C5.27924 11.6171 5.87558 13.1886 6.11482 14.9677C6.13761 15.1372 6.25654 15.2782 6.41978 15.3291C8.06503 15.8427 9.00041 15.0266 8.98495 13.1655C8.98195 12.8042 8.96543 12.4831 8.93025 11.992C8.85166 10.895 8.8579 10.5957 8.97966 10.3942C9.0967 10.2006 9.47662 10.1345 10.3752 10.3066C10.6587 10.3609 10.9432 10.4225 11.2582 10.4964C11.3 10.5062 11.4198 10.5354 11.5739 10.5729C11.9323 10.6601 12.476 10.7924 12.655 10.8314C13.1435 10.9378 13.4939 10.9828 13.8021 10.9637C14.637 10.9121 15.08 10.3698 15.1565 9.33095C15.2914 7.50142 14.8748 3.82659 14.4592 2.473C14.0346 1.08982 13.294 0.567709 11.5163 0.536175C10.3733 0.5159 8.61545 0.5159 6.23444 0.536226C5.62662 0.550486 5.0758 0.669217 4.58583 0.8912C4.72337 1.17848 4.80039 1.50025 4.80039 1.84002V8.88002Z"
+                        />
+                      </svg>
+                    </button>
                   </div>
                 </div>
               </div>
-              <div id="map"></div>
             </div>
-            <div class="tab-content-item active">
-              <div class="contact-info-wrap">
-                <div class="contact-info">
-                  <div class="img-wrap">
-                    <img src="img/contacts-icon1.svg" alt="" />
-                  </div>
-                  <div class="texts">
-                    <b>Наш адрес 2</b>
-                    <span
-                      >г. Алматы, ул. Гоголя, д. 120 /ул. Досмухамедова, д.
-                      20</span
-                    >
-                  </div>
-                </div>
-                <div class="contact-info">
-                  <div class="img-wrap">
-                    <img src="img/contacts-icon2.svg" alt="" />
-                  </div>
-                  <div class="texts">
-                    <b>Телефоны</b>
-                    <span>+7 (727) 279-00-82</span>
-                    <span>+7 (727) 329-21-62</span>
-                    <span>+7 (701) 232-41-17 (WA)</span>
-                  </div>
-                </div>
-                <div class="contact-info">
-                  <div class="img-wrap">
-                    <img src="img/contacts-icon3.svg" alt="" />
-                  </div>
-                  <div class="texts">
-                    <b>Почта</b>
-                    <span>adam.tetyankuev@gmail.com</span>
-                  </div>
-                </div>
-              </div>
-              <div id="map2"></div>
+          </div>
+          <div class="right-info">
+            <h3>Ваши промокоды</h3>
+            <div class="item">
+              <span>JAPANSTYLE50</span>
+              <a href="#" class="pink-btn">-20%</a>
+            </div>
+            <div class="item">
+              <span>JAPANSTYLE50</span>
+              <a href="#" class="pink-btn">-20%</a>
+            </div>
+            <div class="item">
+              <span>JAPANSTYLE50</span>
+              <a href="#" class="pink-btn">-20%</a>
             </div>
           </div>
         </div>
@@ -907,155 +960,5 @@
     <script src="js/aos.js"></script>
     <script src="js/jquery.smooth-scroll.min.js"></script>
     <script src="js/script.js"></script>
-
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-
-    <script>
-      let center2 = [55.707076, 37.385825];
-      let center3 = [55.847076, 37.485825];
-      let center4 = [55.687076, 36.885825];
-
-      function init() {
-        let map = new ymaps.Map("map2", {
-          center: center2,
-          zoom: 9,
-          controls: [],
-        });
-
-        let placemark2 = new ymaps.Placemark(
-          center2,
-          {
-            balloonContent: `
-            
-    <div class="balloon-wrap">
-      <div class="img-wrap">
-        <img src="img/balloon-img.jpg" alt="" />
-      </div>
-      <div class="bottom-wrap">
-      <span class="address"
-        >Адрес г. Алматы ул. Макатаева 129в, Алматы 050000</span
-      >
-    </div>
-    </div>
-            
-            `,
-          },
-          {
-            iconLayout: "default#image",
-            iconImageHref: "",
-            iconImageOffset: [0, 0],
-            iconImageSize: [100, 34],
-            hideIconOnBalloonOpen: false,
-          }
-        );
-
-        map.geoObjects.add(placemark2);
-        map.behaviors.disable("scrollZoom");
-      }
-      ymaps.ready(init);
-    </script>
-
-    <script>
-      let center5 = [55.707076, 37.385825];
-      let center6 = [55.847076, 37.485825];
-      let center7 = [55.687076, 36.885825];
-
-      function init() {
-        let map = new ymaps.Map("map", {
-          center: center5,
-          zoom: 9,
-          controls: [],
-        });
-
-        let placemark2 = new ymaps.Placemark(
-          center5,
-          {
-            balloonContent: `
-        
-        <div class="balloon-wrap2">
-      <div class="img-wrap">
-        <img src="img/ballon-img2.png" alt="" />
-      </div>
-      <div class="text-wrap">
-        <b>Название ЖК</b>
-        <span>пр. Аль Фараби (бывшая ул. 38) ..</span>
-        <img src="img/small-logo.png" alt="" />
-      </div>
-    </div>
-        
-        `,
-          },
-          {
-            iconLayout: "default#image",
-            iconImageHref: "",
-            iconImageOffset: [0, 0],
-            iconImageSize: [100, 34],
-            hideIconOnBalloonOpen: false,
-          }
-        );
-
-        let placemark3 = new ymaps.Placemark(
-          center6,
-          {
-            balloonContent: `
-
-        <div class="balloon-wrap2">
-      <div class="img-wrap">
-        <img src="img/ballon-img2.png" alt="" />
-      </div>
-      <div class="text-wrap">
-        <b>Название ЖК 2</b>
-        <span>пр. Аль Фараби (бывшая ул. 38) ..</span>
-        <img src="img/small-logo.png" alt="" />
-      </div>
-    </div>
-
-            `,
-          },
-          {
-            iconLayout: "default#image",
-            iconImageHref: "",
-            iconImageOffset: [0, 0],
-            iconImageSize: [100, 34],
-            hideIconOnBalloonOpen: false,
-          }
-        );
-
-        let placemark4 = new ymaps.Placemark(
-          center7,
-          {
-            balloonContent: `
-
-        <div class="balloon-wrap2">
-      <div class="img-wrap">
-        <img src="img/ballon-img2.png" alt="" />
-      </div>
-      <div class="text-wrap">
-        <b>Название ЖК 3</b>
-        <span>пр. Аль Фараби (бывшая ул. 38) ..</span>
-        <img src="img/small-logo.png" alt="" />
-      </div>
-    </div>
-
-            `,
-          },
-          {
-            iconLayout: "default#image",
-            iconImageHref: "",
-            iconImageOffset: [0, 0],
-            iconImageSize: [100, 34],
-            hideIconOnBalloonOpen: false,
-          }
-        );
-
-        map.geoObjects.add(placemark2);
-        map.geoObjects.add(placemark3);
-        map.geoObjects.add(placemark4);
-        map.behaviors.disable("scrollZoom");
-
-        // placemark.balloon.open();
-      }
-      ymaps.ready(init);
-    </script>
   </body>
 </html>

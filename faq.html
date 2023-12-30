@@ -1,83 +1,703 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="fixed">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="x-ua-compatible" content="IE=edge" />
-    <title>SVOYDOM</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <title>JapanStyle</title>
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/slick-theme.css" />
     <link rel="stylesheet" href="css/select2.min.css" />
-    <link rel="stylesheet" href="css/nouislider.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <header class="header" id="header">
+    <header class="header">
       <div class="wrapper">
         <div class="header-info">
-          <a href="index.html" class="logo"
-            ><img src="img/logo.svg" alt=""
-          /></a>
-          <div class="menu-wrap">
-            <ul class="main-menu">
-              <li>
-                <button type="button">Проекты <span>Меню</span></button>
-                <ul class="sub-menu">
-                  <li><a href="current-projects.html">Текущие проекты</a></li>
-                  <li><a href="completed-projects.html">Завершенные</a></li>
-                </ul>
-              </li>
-              <li><a href="about.html">О компании</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="news.html">Новости</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
-              <li><a href="upgrade.html">Svoy Upgrade</a></li>
-              <li><a href="upgrade.html">Svoy Bonus</a></li>
-            </ul>
-            <div class="btn-wrap">
-              <a href="#" class="green-btn">Заказать звонок</a>
-              <div class="select-wrap lang">
-                <select>
-                  <option value="1">Ру</option>
-                  <option value="2">Кз</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="header-buttons">
-            <div class="select-wrap icon-select">
-              <select>
-                <option value="1">Алматы</option>
-                <option value="2">Астана</option>
-                <option value="3">Атырау</option>
-              </select>
-            </div>
-            <button class="drop-menu">
-              <img src="img/drop-icon.svg" alt="" />
+          <button class="drop-menu" type="button">
+            <img src="img/drop-menu.svg" alt="" />
+          </button>
+          <a href="index.html" class="logo">
+            <img src="img/logo.svg" alt="" />
+          </a>
+          <a href="index.html" class="logo-mobile">
+            <img src="img/flower.svg" alt="" />
+          </a>
+          <form class="search">
+            <input type="text" placeholder="Поиск" />
+            <button class="green-btn" type="button">
+              <img src="img/search.svg" alt="" />
             </button>
-            <a href="favorites.html" class="favorite-icon">
+          </form>
+          <div class="search-mobile">
+            <div class="top">
+              <b>Найти товар</b>
+              <button class="search-close" type="button">
+                <img src="img/close-black.svg" alt="" />
+              </button>
+            </div>
+            <form class="search">
+              <input type="text" placeholder="Поиск" />
+              <button class="green-btn" type="button">
+                <img src="img/search.svg" alt="" />
+              </button>
+            </form>
+            <b>Последние запросы:</b>
+            <span>Товар под названием вы вводите что-то</span>
+            <span>Товар под названием вы вводите что-то</span>
+            <button class="clear" type="button">Очистить</button>
+          </div>
+          <div class="icons">
+            <a href="#" class="desktop-hide mobile-search">
+              <img src="img/search-grey.svg" alt="" />
+            </a>
+            <a href="#">
               <svg
-                width="20"
-                height="21"
-                viewBox="0 0 20 21"
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M18.4134 3.0747C17.3781 1.95181 15.9575 1.33337 14.413 1.33337C13.2585 1.33337 12.2013 1.69837 11.2704 2.41814C10.8008 2.78142 10.3752 3.22595 10 3.7447C9.62492 3.22607 9.19922 2.78142 8.72941 2.41814C7.79875 1.69837 6.74148 1.33337 5.58699 1.33337C4.0425 1.33337 2.62176 1.95181 1.58645 3.0747C0.563516 4.18447 0 5.7006 0 7.34396C0 9.03537 0.630351 10.5837 1.98363 12.2167C3.19426 13.6774 4.93422 15.1603 6.94914 16.8774C7.63719 17.4638 8.41707 18.1284 9.22684 18.8364C9.4408 19.0238 9.71557 19.1271 10 19.127C10.2846 19.127 10.5592 19.0238 10.7729 18.8367C11.5826 18.1286 12.363 17.4636 13.0513 16.8769C15.0659 15.1601 16.8059 13.6774 18.0165 12.2165C19.3698 10.5838 20 9.0354 20 7.3438C20 5.7006 19.4365 4.18447 18.4134 3.0747Z"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.82443 5.0263L3.64203 3.52963C3.57632 2.89515 3.03543 2.41266 2.38992 2.41266H1.71551C1.29822 2.41266 0.959961 2.07848 0.959961 1.66629C0.959961 1.2541 1.29822 0.919922 1.71551 0.919922H2.38992C3.81047 0.919922 5.0007 1.98164 5.14528 3.37771L5.28294 4.70695H20.6162C20.9332 4.70695 21.1714 4.99285 21.1104 5.30016L19.7708 12.049C19.4466 13.6828 17.9971 14.8613 16.3119 14.8613H8.28333C8.51488 15.8706 9.42794 16.6023 10.493 16.6023H16.8165C16.8537 16.6023 16.8907 16.605 16.8722 16.6083C16.9276 16.6043 16.9832 16.6023 17.0391 16.6023C18.2907 16.6023 19.3053 17.6047 19.3053 18.8411C19.3053 20.0776 18.2907 21.0799 17.0391 21.0799C15.7875 21.0799 14.7729 20.0776 14.7729 18.8411C14.7729 18.5835 14.8171 18.3319 14.9019 18.095H12.1267C12.2114 18.3319 12.2556 18.5835 12.2556 18.8411C12.2556 20.0776 11.241 21.0799 9.98944 21.0799C8.73783 21.0799 7.72324 20.0776 7.72324 18.8411C7.72324 18.2958 7.92191 17.7819 8.27103 17.3814C7.4122 16.7635 6.84565 15.8104 6.7358 14.7467L6.7242 14.6344C5.49457 14.1719 4.58707 13.0477 4.46619 11.6823L4.16169 8.24294C4.15655 8.22166 4.15277 8.19981 4.15045 8.17746L3.82443 5.0263ZM9.98944 19.8361C10.5456 19.8361 10.9965 19.3906 10.9965 18.8411C10.9965 18.2916 10.5456 17.8462 9.98944 17.8462C9.43323 17.8462 8.98234 18.2916 8.98234 18.8411C8.98234 19.3906 9.43323 19.8361 9.98944 19.8361ZM17.0391 19.8361C17.5953 19.8361 18.0462 19.3906 18.0462 18.8411C18.0462 18.2916 17.5953 17.8462 17.0391 17.8462C16.4829 17.8462 16.032 18.2916 16.032 18.8411C16.032 19.3906 16.4829 19.8361 17.0391 19.8361Z"
                 />
               </svg>
+              <span class="count">3</span>
+            </a>
+            <a href="#">
+              <svg
+                width="18"
+                height="16"
+                viewBox="0 0 18 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.38128 2.13413C11.1608 0.355354 14.0458 0.355354 15.8253 2.13413C17.6049 3.91302 17.6049 6.79724 15.8253 8.57612L9.33931 15.0595C9.15187 15.2469 8.84806 15.2469 8.66062 15.0595L2.17465 8.57612C0.395069 6.79724 0.395069 3.91302 2.17465 2.13413C3.95414 0.355354 6.83917 0.355354 8.61865 2.13413L8.99997 2.5153L9.38128 2.13413Z"
+                />
+              </svg>
+            </a>
+            <button type="button" class="open-btn">
+              <svg
+                width="17"
+                height="19"
+                viewBox="0 0 17 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.19458 0C6.4767 0 4.82918 0.682425 3.61446 1.89715C2.39974 3.11187 1.71731 4.75939 1.71731 6.47727V11.5295L0.283675 13.6886C0.111838 13.9536 0.0143701 14.2598 0.00147075 14.5754C-0.0114286 14.8909 0.0607146 15.2041 0.210351 15.4822C0.359988 15.7603 0.581617 15.993 0.852045 16.1561C1.12247 16.3191 1.43176 16.4065 1.74754 16.4091H14.6416C14.9594 16.408 15.2711 16.321 15.5434 16.1573C15.8158 15.9936 16.0389 15.7592 16.1889 15.479C16.339 15.1989 16.4104 14.8833 16.3957 14.5659C16.381 14.2484 16.2808 13.9408 16.1055 13.6757L14.6719 11.5295V6.47727C14.6719 4.75939 13.9894 3.11187 12.7747 1.89715C11.56 0.682425 9.91246 0 8.19458 0ZM8.19458 19C8.72986 18.9994 9.25182 18.833 9.68869 18.5237C10.1256 18.2144 10.4559 17.7774 10.6344 17.2727H5.75481C5.93324 17.7774 6.26359 18.2144 6.70047 18.5237C7.13735 18.833 7.6593 18.9994 8.19458 19Z"
+                />
+              </svg>
+              <span class="count">11</span>
+              <div class="hide-wrap">
+                <div class="scroll-wrap">
+                  <a href="#" class="item">
+                    <span class="text"
+                      >Вы получили промокод за покупку товара
+                    </span>
+                    <span class="pink">“JAPANSTYLE” </span>
+                  </a>
+                  <a href="#" class="item">
+                    <span class="text"
+                      >Вы получили ответ на комментарий под товаром
+                    </span>
+                    <span class="pink">“Японские духи....”</span>
+                  </a>
+                  <a href="#" class="item">
+                    <span class="text"
+                      >Вы получили ответ на комментарий под товаром
+                    </span>
+                    <span class="pink">“Японские духи....”</span>
+                  </a>
+                  <a href="#" class="item">
+                    <span class="text"
+                      >Вы получили ответ на комментарий под товаром
+                    </span>
+                    <span class="pink">“Японские духи....”</span>
+                  </a>
+                  <a href="#" class="item">
+                    <span class="text"
+                      >Вы получили ответ на комментарий под товаром
+                    </span>
+                    <span class="pink">“Японские духи....”</span>
+                  </a>
+                  <a href="#" class="item">
+                    <span class="text"
+                      >Вы получили ответ на комментарий под товаром
+                    </span>
+                    <span class="pink">“Японские духи....”</span>
+                  </a>
+                </div>
+              </div>
+            </button>
+            <a href="#" class="desktop-hide">
+              <img src="img/user.svg" alt="" />
+            </a>
+          </div>
+          <div class="login-links">
+            <a href="#" class="registration">Регистрация</a>
+            <a href="#" class="login">или Вход</a>
+          </div>
+        </div>
+        <div class="menu-wrap">
+          <div class="scroll-wrap">
+            <div class="close-menu">
+              <img src="img/close.svg" alt="" />
+            </div>
+            <div class="info1">
+              <ul class="social-menu">
+                <li>
+                  <a href="#"></a>
+                </li>
+                <li>
+                  <a href="#"></a>
+                </li>
+                <li>
+                  <a href="#"></a>
+                </li>
+                <li>
+                  <a href="#"></a>
+                </li>
+                <li class="hide">
+                  <a href="#"></a>
+                </li>
+              </ul>
+              <ul class="main-menu">
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+              <div class="city">
+                <span>Страна: </span>
+                <div class="select-wrap style2">
+                  <select>
+                    <option value="1" selected>Россия</option>
+                    <option value="2">Сша</option>
+                    <option value="3">Япония</option>
+                  </select>
+                </div>
+              </div>
+              <div class="price">
+                <span>Валюта: </span>
+                <div class="select-wrap style2">
+                  <select>
+                    <option value="1" selected>Rub</option>
+                    <option value="2">Usd</option>
+                    <option value="3">Jpy</option>
+                  </select>
+                </div>
+              </div>
+              <div class="lang-select">
+                <select
+                  id="accountSelector"
+                  name="accountSelector"
+                  data-test-id="accountSelector"
+                  class="form-control"
+                  data-placeholder="Select account"
+                >
+                  <option
+                    data-img="img/ru.svg"
+                    data-title="Русский"
+                    value="Русский"
+                    selected
+                  >
+                    Русский
+                  </option>
+                  <option
+                    data-img="img/us.svg"
+                    data-title="English"
+                    value="English"
+                  >
+                    English
+                  </option>
+                  <option
+                    data-img="img/japan.svg"
+                    data-title="日本語"
+                    value="日本語"
+                  >
+                    日本語
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="info2">
+              <ul class="menu2">
+                <li>
+                  <button>Для детей</button>
+                  <div class="sub-menu">
+                    <div class="back">
+                      <img src="img/back-icon.svg" alt="" />
+                      <span>Для детей</span>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <button>Для женщин</button>
+                  <div class="sub-menu">
+                    <div class="back">
+                      <img src="img/back-icon.svg" alt="" />
+                      <span>Для детей</span>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <button>Для мужчин</button>
+                  <div class="sub-menu">
+                    <div class="back">
+                      <img src="img/back-icon.svg" alt="" />
+                      <span>Для детей</span>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <button>Для дома</button>
+                  <div class="sub-menu">
+                    <div class="back">
+                      <img src="img/back-icon.svg" alt="" />
+                      <span>Для детей</span>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <button>Японская аптека</button>
+                  <div class="sub-menu">
+                    <div class="back">
+                      <img src="img/back-icon.svg" alt="" />
+                      <span>Для детей</span>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <button>Скидки</button>
+                  <div class="sub-menu">
+                    <div class="back">
+                      <img src="img/back-icon.svg" alt="" />
+                      <span>Для детей</span>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <button>Одежда</button>
+                  <div class="sub-menu">
+                    <div class="back">
+                      <img src="img/back-icon.svg" alt="" />
+                      <span>Для детей</span>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <b>Уход за лицом</b>
+                      <div class="links">
+                        <div class="back">
+                          <img src="img/back-icon.svg" alt="" />
+                          <span>Гигиена</span>
+                        </div>
+                        <a href="#">Гигиенические помады для губ</a>
+                        <a href="#">Эссенции</a>
+                        <a href="#">Скрабы</a>
+                        <a href="#">Лосьоны</a>
+                        <a href="#">Маски</a>
+                        <a href="#">Пилинги</a>
+                        <a href="#">Молочко</a>
+                        <a href="#">Массажеры для лица</a>
+                        <a href="#">Сыворотки</a>
+                        <a href="#">Крема</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <a href="index.html" class="logo-mobile-small">
+              <img src="img/mobile-logo.svg" alt="" />
             </a>
           </div>
         </div>
@@ -95,49 +715,29 @@
 
     <div class="faq-wrap">
       <div class="wrapper">
-        <h2
-          class="main-title"
-          data-aos="fade-right"
-          data-aos-offset="-100"
-          data-aos-delay="100"
-          data-aos-duration="800"
-          data-aos-easing="ease-in-out"
-        >
-          Часто задаваемые вопросы
-        </h2>
-        <p
-          class="faq-subtitle"
-          class="main-title"
-          data-aos="fade-right"
-          data-aos-offset="-100"
-          data-aos-delay="100"
-          data-aos-duration="1200"
-          data-aos-easing="ease-in-out"
-        >
-          Каждый покупатель получит Svoy Bonus и сможет использовать его при
-          покупке следующей квартиры. Мы дарим Вам купоны на сотни тысяч тенге
-        </p>
+        <h2 class="main-title">FAQ</h2>
+        <p class="faq-subtitle">Ответы на важные вопросы</p>
         <div class="select-wrap border">
           <select id="tab-select">
-            <option value="1" selected>Название категории вопроса</option>
-            <option value="2">Название другой категории вопроса</option>
-            <option value="3">Название второй категории вопроса</option>
-            <option value="4">Пятая категория вопроса</option>
+            <option value="1" selected>Общие</option>
+            <option value="2">Доставка</option>
+            <option value="3">Обмен/Возврат</option>
+            <option value="4">Оплата</option>
           </select>
         </div>
         <div class="tab-wrap">
           <ul class="tabs-menu">
             <li class="active" data-index="1">
-              <a href="#"><span>Название категории вопроса</span></a>
+              <a href="#"><span>Общие</span></a>
             </li>
             <li data-index="2">
-              <a href="#"><span>Название другой категории вопроса</span></a>
+              <a href="#"><span>Доставка</span></a>
             </li>
             <li data-index="3">
-              <a href="#"><span>Название второй категории вопроса</span></a>
+              <a href="#"><span>Обмен/Возврат</span></a>
             </li>
             <li data-index="4">
-              <a href="#"><span>Пятая категория вопроса</span></a>
+              <a href="#"><span>Оплата</span></a>
             </li>
           </ul>
           <div class="tab-content-wrap">
@@ -145,133 +745,121 @@
               <ul class="accordion-list">
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Условия доставки</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Оплата</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Возврат</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Как получить товар</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Как не получить товар</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Что?</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
@@ -281,133 +869,121 @@
               <ul class="accordion-list">
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      2 Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Условия доставки 2</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Оплата</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Возврат</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Как получить товар</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Как не получить товар</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Что?</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
@@ -417,133 +993,121 @@
               <ul class="accordion-list">
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      3 Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Условия доставки 3</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Оплата</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Возврат</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Как получить товар</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Как не получить товар</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Что?</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
@@ -553,191 +1117,127 @@
               <ul class="accordion-list">
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      4 Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Условия доставки 4</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Оплата</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Возврат</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Как получить товар</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Как не получить товар</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
                 <li class="accordion-list-item">
                   <div class="item-heading">
-                    <p>
-                      Что такое помощь клиенту если клиент это я не понял?
-                      Возможно вопрос очень длинный
-                    </p>
+                    <p>Что?</p>
                     <span class="icon"> </span>
                   </div>
                   <div class="item-body">
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Aspernatur quam natus minima! Labore consequuntur dolorum
-                      similique eligendi officiis facere soluta laborum
-                      consectetur repudiandae molestias incidunt doloremque
-                      minima sed, pariatur recusandae non nulla nostrum delectus
-                      numquam dicta omnis quis id quaerat. Quas voluptas eum
-                      accusamus, repellendus consequuntur ipsam dolorum. Enim,
-                      eos? Iste aperiam ipsam assumenda repudiandae quas
-                      doloribus saepe voluptates obcaecati.
+                      С нами наши клиенты уверены в своем выборе, ведь мы
+                      постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах. Профессиональный подход и лучшие условия
+                      обеспечивают высокий уровень сервиса для наших клиентов.
+                      Более 30 000 клиентов доверяют нам и мы рады быть
+                      полезными!С нами наши клиенты уверены в своем выборе, ведь
+                      мы постоянно контролируем ход строительства объектов наших
+                      Партнеров и актуализируем информацию на наших
+                      онлайн-каналах.
                     </p>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="contact-us">
-      <div class="wrapper">
-        <div class="title-wrap">
-          <h2
-            class="main-title"
-            data-aos="fade-right"
-            data-aos-offset="-100"
-            data-aos-delay="100"
-            data-aos-duration="800"
-            data-aos-easing="ease-in-out"
-          >
-            Свяжитесь с нами
-          </h2>
-        </div>
-        <div class="contact-info-wrap">
-          <div class="contact-form-wrap">
-            <img src="img/contact-bg.png" alt="" class="bg" />
-            <h3>Оставьте заявку мы вам обязательно перезвоним!</h3>
-            <p>
-              Заполните форму обратной связи, чтобы задать все интересующие Вас
-              вопросы и оставить запрос на поиск идеальной квартиры.
-            </p>
-            <form class="contact-form">
-              <div class="inputs">
-                <input type="text" placeholder="Ваше имя" />
-                <input
-                  type="tel"
-                  class="phone-number-input"
-                  placeholder="+ 7 700 000 00 00"
-                />
-                <div class="select-wrap">
-                  <select>
-                    <option value="1">Жилой комплекс</option>
-                    <option value="2">Первый</option>
-                    <option value="3">Второй</option>
-                  </select>
-                </div>
-              </div>
-              <div class="btn-wrap">
-                <button class="green-btn" type="button">Оставить заявку</button>
-                <p>
-                  Нажимая кнопку “отправить” вы соглашаетесь с
-                  <a href="#"> политикой обработки данных</a>
-                </p>
-              </div>
-            </form>
-          </div>
-          <div id="map2"></div>
         </div>
       </div>
     </div>
@@ -745,135 +1245,108 @@
     <footer class="footer">
       <div class="wrapper">
         <div class="footer-top">
-          <div class="footer-menu-wrap">
-            <a href="index.html" class="footer-logo hide">
-              <img src="img/logo.svg" alt="" />
-            </a>
-            <ul class="main-menu">
-              <li><a href="about.html">О компании</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
-              <li><a href="news.html">Новости</a></li>
-              <li>
-                <button type="button">Проекты</button>
-                <ul class="sub-menu">
-                  <li><a href="current-projects.html">Текущие проекты</a></li>
-                  <li><a href="completed-projects.html">Завершенные</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="social-menu">
-              <li>
-                <a href="#"></a>
-              </li>
-              <li>
-                <a href="#"></a>
-              </li>
-              <li>
-                <a href="#"></a>
-              </li>
-              <li>
-                <a href="#"></a>
-              </li>
-            </ul>
-          </div>
-          <div class="links">
-            <a href="mailto:infosales@svoydom.kz">infosales@svoydom.kz</a>
-            <a href="tel:+77008360906">+7 700 836 09 06</a>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <div class="top">
+          <div class="logo-wrap">
             <a href="index.html" class="footer-logo">
               <img src="img/logo.svg" alt="" />
             </a>
-            <a href="#" class="green-btn">Написать в Whatsapp</a>
+            <p>
+              Компания Japan Style, уже 10-й год, занимается поставками товаров
+              в широком ассортименте, напрямую из Японии оптом и в розницу.
+            </p>
           </div>
-          <p>
-            Товарищество с ограниченной ответственностью "SVOYDOM Astana" Для
-            наших клиентов мы всегда готовы подобрать квартиру по оптимальной
-            цене с учетом ваших особенных пожеланий как для комфортной жизни,
-            так для создания и ведения успешного бизнеса.
+          <div class="footer-info">
+            <h3>Магазин</h3>
+            <ul class="footer-menu">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">Условия возврата/Обмен</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Политика конфиденциальности</a></li>
+            </ul>
+          </div>
+          <div class="footer-info">
+            <h3>Категории</h3>
+            <ul class="footer-menu">
+              <li>
+                <a href="#">Мужчинам</a>
+              </li>
+              <li>
+                <a href="#">Женщинам </a>
+              </li>
+              <li>
+                <a href="#">Детям </a>
+              </li>
+              <li>
+                <a href="#">Аптека </a>
+              </li>
+              <li>
+                <a href="#">Скидки </a>
+              </li>
+              <li>
+                <a href="#"> Одежда </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contacts">
+            <h3>Контакты</h3>
+            <div class="info">
+              <img src="img/contacts-icon1.svg" alt="" />
+              <span
+                >г. Алматы, ул. Гоголя, д. 120 /ул. Досмухамедова, д. 20</span
+              >
+            </div>
+            <div class="info">
+              <img src="img/contacts-icon2.svg" alt="" />
+              <span>+7 (727) 279-00-82</span>
+            </div>
+            <div class="info">
+              <img src="img/contacts-icon3.svg" alt="" />
+              <span>adam.tetyankuev@gmail.com</span>
+            </div>
+            <h5>Подписаться на рассылку</h5>
+            <form class="subscribe-form" id="subscribe-form">
+              <input type="email" name="email" placeholder="Ваш e-mail адрес" />
+              <button class="green-btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="copyright">
+            Japanstyle &copy; Copyright 2023, Все права защищены
           </p>
-          <p>Все права защищены &copy; 2023</p>
+          <div class="logos">
+            <a href="#"><img src="img/brand-logo1.svg" alt="" /></a>
+            <a href="#"><img src="img/brand-logo2.svg" alt="" /></a>
+            <a href="#"><img src="img/brand-logo3.svg" alt="" /></a>
+            <a href="#"><img src="img/brand-logo4.svg" alt="" /></a>
+            <a href="#"><img src="img/brand-logo5.svg" alt="" /></a>
+          </div>
+          <ul class="social-menu">
+            <li>
+              <a href="#"></a>
+            </li>
+            <li>
+              <a href="#"></a>
+            </li>
+            <li>
+              <a href="#"></a>
+            </li>
+            <li>
+              <a href="#"></a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
 
-    <a href="#header" class="top-scroll">
-      <span class="icon">
-        <svg
-          width="16"
-          height="9"
-          viewBox="0 0 16 9"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M7.99997 6.99385e-07C8.09548 -0.000101352 8.19008 0.0192601 8.27832 0.0569722C8.36656 0.0946834 8.4467 0.150001 8.51415 0.219749L15.7869 7.71971C16.071 8.01277 16.071 8.48733 15.7869 8.7802C15.5027 9.07308 15.0425 9.07327 14.7585 8.7802L7.99997 1.81049L1.24143 8.78021C0.957251 9.07327 0.497068 9.07327 0.213069 8.78021C-0.0709305 8.48714 -0.0711137 8.01259 0.213069 7.71971L7.48578 0.219749C7.55323 0.150001 7.63338 0.0946834 7.72162 0.0569723C7.80986 0.0192602 7.90445 -0.000101335 7.99997 6.99385e-07Z"
-          />
-        </svg>
-      </span>
-      <span class="text">Наверх</span>
-    </a>
-
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/gsap.min.js"></script>
-    <script src="js/ScrollTrigger.min.js"></script>
     <script src="js/jquery.inputmask.bundle.min.js"></script>
     <script src="js/jquery.validate.js"></script>
     <script src="js/select2.min.js"></script>
-    <script src="js/nouislider.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/jquery.smooth-scroll.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
-
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-
-    <script>
-      let center2 = [55.707076, 37.385825];
-      let center3 = [55.847076, 37.485825];
-      let center4 = [55.687076, 36.885825];
-
-      function init() {
-        let map = new ymaps.Map("map2", {
-          center: center2,
-          zoom: 9,
-          controls: [],
-        });
-
-        let placemark2 = new ymaps.Placemark(
-          center2,
-          {
-            balloonContent: `
-            
-    <div class="balloon-wrap">
-      <div class="img-wrap">
-        <img src="img/balloon-img.jpg" alt="" />
-      </div>
-      <div class="bottom-wrap">
-      <span class="address"
-        >Адрес г. Алматы ул. Макатаева 129в, Алматы 050000</span
-      >
-    </div>
-    </div>
-            
-            `,
-          },
-          {
-            iconLayout: "default#image",
-            iconImageHref: "img/map-marker.svg",
-            iconImageOffset: [0, 0],
-            iconImageSize: [100, 34],
-            hideIconOnBalloonOpen: false,
-          }
-        );
-
-        map.geoObjects.add(placemark2);
-        map.behaviors.disable("scrollZoom");
-      }
-      ymaps.ready(init);
-    </script>
   </body>
 </html>
