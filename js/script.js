@@ -362,7 +362,7 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    fade: false,
+    fade: true,
     asNavFor: ".slider-nav2",
   });
   $(".slider-nav2").slick({
