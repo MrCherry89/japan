@@ -719,11 +719,29 @@
               height: 45px;
               border-radius: 10px;
               background: white;
+              cursor: pointer;
+              font-size: 14px;
+              color: $black;
+              @include placeholder {
+                color: #959ead;
+                font-size: 14px;
+              }
               &::-webkit-calendar-picker-indicator {
                 opacity: 0;
               }
+              &:hover {
+                background: rgba(#006fbb, 0.1);
+              }
               &:focus {
                 background: rgba(#006fbb, 0.1);
+              }
+              &[type="date"] {
+                color: #959ead;
+                font-size: 14px;
+                @include placeholder {
+                  color: $black;
+                  font-size: 14px;
+                }
               }
             }
           }
@@ -1070,6 +1088,10 @@
             font-weight: 500;
             padding: 0 20px 16px;
             border-bottom: 1px solid #f4f6f8;
+            &.no-border {
+              border: none;
+              padding-bottom: 0;
+            }
           }
           .textarea-wrap {
             @include flex;
@@ -1125,7 +1147,18 @@
             .remove {
               position: absolute;
               bottom: 10px;
-              right: 20px;
+              right: 10px;
+              @include flex;
+              min-width: 38px;
+              height: 38px;
+              border-radius: 50%;
+              background: transparent;
+              &:hover {
+                background: rgba(#fb4949, 0.1);
+              }
+              img {
+                margin: auto;
+              }
             }
             .texts {
               @include flex;
@@ -1558,6 +1591,7 @@
             font-weight: 500;
             margin: 32px auto 0;
             border-radius: 8px;
+            font-size: 16px;
             border: 1px solid transparent;
             @media (max-width: 767px) {
               margin-top: 20px;
@@ -1601,13 +1635,29 @@
           textarea {
             font-size: 16px;
             color: $black;
+            background: #fdfeff;
+            transition: 0.3s;
+            cursor: pointer;
             @include placeholder {
               color: $grey;
             }
+            &:hover {
+              background: white;
+              @include placeholder {
+                color: $black;
+              }
+            }
           }
           input {
-            background: white;
+            background: #fdfeff;
+            font-size: 16px;
             border-radius: 8px;
+            &:hover {
+              background: white;
+              @include placeholder {
+                color: $black;
+              }
+            }
           }
         }
       }
@@ -1866,6 +1916,7 @@
           display: none;
           @media (max-width: 767px) {
             @include flex;
+            margin: 0 auto;
             max-width: 470px;
             width: 100%;
           }
@@ -2185,6 +2236,7 @@
             span {
               font-size: 14px;
               color: $grey;
+              transition: 0.3s;
             }
             svg {
               transition: 0.3s;
@@ -2193,6 +2245,9 @@
               fill: #b1bfcd;
             }
             &:hover {
+              span {
+                color: $black;
+              }
               svg {
                 fill: $pink;
               }
@@ -2256,7 +2311,7 @@
       flex-grow: 1;
       border-radius: 24px;
       border: 1px solid #ebf0f4;
-      padding: 15px 20px 40px;
+      padding: 24px 20px 40px;
       @media (max-width: 1024px) {
         width: 100%;
       }
@@ -2632,6 +2687,7 @@
             color: $pink;
             display: block;
             margin-bottom: 16px;
+            margin-top: 25px;
           }
         }
       }
@@ -2937,6 +2993,9 @@
               justify-content: flex-start;
               width: calc(100% - 105px);
             }
+            &:hover {
+              color: $black;
+            }
           }
           span {
             margin: 0 20px;
@@ -3034,14 +3093,21 @@
     border-radius: 5px;
     background: #f6f8fb;
     font-size: 16px;
+    transition: 0.3s;
     color: $black;
+    cursor: pointer;
     @include placeholder {
       font-size: 16px;
       color: $grey;
     }
     @media (max-width: 767px) {
       height: 40px;
-      font-size: 14px;
+    }
+    &:hover {
+      background: #ebf0f4;
+      @include placeholder {
+        color: $black;
+      }
     }
   }
   &.password {
@@ -3571,7 +3637,6 @@
 
 .blog-info2 {
   margin-bottom: 80px;
-  margin-top: 20px;
   @media (max-width: 767px) {
     margin-bottom: 50px;
   }
@@ -3611,6 +3676,9 @@
       color: white;
       @include inline-flex;
       margin-bottom: 20px;
+      @media (max-width: 767px) {
+        margin-bottom: 16px;
+      }
     }
     h2 {
       font-size: 36px;
@@ -5059,7 +5127,7 @@
         @media (max-width: 767px) {
           width: 100%;
           padding: 0;
-          margin-bottom: 30px;
+          margin-bottom: 10px;
           text-align: center;
         }
         h2 {
@@ -5094,12 +5162,12 @@
         width: 35%;
         @include flex;
         padding: 0 20px;
+        align-self: flex-end;
         @media (max-width: 1024px) {
           width: 40%;
         }
         @media (max-width: 767px) {
           width: 100%;
-          margin-bottom: -20px;
         }
         img {
           max-width: 100%;
@@ -5455,16 +5523,11 @@ label.error {
     .tab-wrap {
       @include flex;
       .tabs-menu {
-        margin-right: 30px;
-        min-width: 370px;
-        width: 370px;
+        margin-right: 20px;
+        min-width: 210px;
+        width: 210px;
         @include flex;
         @include dir-col;
-        @media (max-width: 1200px) {
-          margin-right: 20px;
-          min-width: 280px;
-          width: 280px;
-        }
         @media (max-width: 767px) {
           display: none;
         }
@@ -5496,10 +5559,7 @@ label.error {
         }
       }
       .tab-content-wrap {
-        width: calc(100% - 400px);
-        @media (max-width: 1200px) {
-          width: calc(100% - 300px);
-        }
+        width: calc(100% - 230px);
         @media (max-width: 767px) {
           width: 100%;
         }
@@ -5690,7 +5750,7 @@ label.error {
       cursor: pointer;
       border-radius: 8px;
       @media (max-width: 767px) {
-        padding: 11px 12px;
+        padding: 8px 14px;
       }
       p {
         font-size: 18px;
@@ -5699,7 +5759,7 @@ label.error {
         font-weight: 500;
         padding-right: 10px;
         @media (max-width: 767px) {
-          font-size: 14px;
+          font-size: 16px;
         }
       }
       .icon {
@@ -5748,11 +5808,15 @@ label.error {
       padding-left: 30px;
       display: none;
       @media (max-width: 767px) {
-        padding: 15px;
+        padding: 15px 14px;
       }
       p {
         font-size: 16px;
         line-height: 22px;
+        @media (max-width: 767px) {
+          font-size: 14px;
+          line-height: 19px;
+        }
       }
     }
   }
@@ -6093,8 +6157,12 @@ label.error {
   }
 
   &:hover {
+    background: #ebf0f4;
     .select2-container .select2-selection--single .select2-selection__rendered {
-      color: $pink;
+      color: $black;
+    }
+    .select2-container--default .select2-selection--single {
+      background: #ebf0f4;
     }
   }
 
@@ -6118,6 +6186,7 @@ label.error {
     border: none;
     padding: 0;
     background: #f6f8fb;
+    transition: 0.3s;
     height: 100%;
     border-radius: 8px;
 
@@ -6135,6 +6204,8 @@ label.error {
     @media (max-width: 767px) {
       height: 40px;
       line-height: inherit;
+      @include flex;
+      @include align-center;
     }
   }
 
