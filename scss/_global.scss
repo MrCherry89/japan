@@ -778,3 +778,23 @@ a {
     }
   }
 }
+
+.error-wrap {
+  margin: 70px 0;
+  @media (max-width: 767px) {
+    margin: 20px 0;
+  }
+  .wrapper {
+    max-width: 820px;
+    text-align: center;
+    > img {
+      width: 100%;
+    }
+    p {
+      margin: 30px auto;
+      text-align: center;
+      font-size: 16px;
+      color: $black;
+    }
+  }
+}
