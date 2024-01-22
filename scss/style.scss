@@ -5418,7 +5418,7 @@
   .wrapper {
     @include flex;
     @include justify-between;
-    align-items: flex-start;
+    align-items: center;
     @media (max-width: 767px) {
       @include dir-col;
     }

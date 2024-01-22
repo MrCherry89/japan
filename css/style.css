@@ -7726,7 +7726,7 @@ a:focus {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 @media (max-width: 767px) {
   .our-specialty .wrapper {
